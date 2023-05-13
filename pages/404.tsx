@@ -1,5 +1,8 @@
 import Head from 'next/head';
-import React, { Fragment } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Fragment } from 'react';
+import PageNotFoundPng from '../public/PageNotFound.png';
 
 const PageNotFound = () => {
     return (
@@ -8,7 +11,32 @@ const PageNotFound = () => {
                 <title>Page not found</title>
             </Head>
 
-            <div>404!</div>
+            <div className="flex items-center justify-evenly md:justify-center flex-col-reverse md:flex-row w-full min-h-[85vh] md:min-h-[91vh]">
+                <Image
+                    src={PageNotFoundPng}
+                    alt="404, page not found!!"
+                    width={800}
+                />
+
+                <div className="flex flex-col">
+                    <div>
+                        <p className="text-5xl">Oops!!</p>
+
+                        <p className="text-2xl mt-4 mb-7">
+                            We could not found the page you were looking for...
+                        </p>
+                    </div>
+
+                    <div>
+                        <Link
+                            href="/"
+                            className="bg-gray-700 text-white px-10 py-3 rounded"
+                        >
+                            Home
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </Fragment>
     );
 };
