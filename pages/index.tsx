@@ -10,9 +10,11 @@ const Home = () => {
                 <title>Assurely</title>
             </Head>
 
-            <div className="flex gap-10 w-full">
+            <div className="flex gap-10 w-full flex-col md:flex-row mt-20 md:mt-0">
                 <div className="flex-1 flex flex-col items-center justify-center gap-8">
-                    <p className="text-7xl font-light uppercase">Coming soon</p>
+                    <p className="text-7xl font-light uppercase text-center">
+                        Coming soon
+                    </p>
 
                     <p className="text-2xl font-extralight font-sans tracking-widest text-center w-2/3">
                         We will be celebrating the launch of our new site very
@@ -20,15 +22,13 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div>
-                    <Image
-                        src={GroupPhoto}
-                        alt="Group Photo"
-                        quality={100}
-                        width={600}
-                        priority
-                    />
-                </div>
+                <Image
+                    src={GroupPhoto}
+                    alt="Group Photo"
+                    quality={100}
+                    width={600}
+                    priority
+                />
             </div>
         </Fragment>
     );

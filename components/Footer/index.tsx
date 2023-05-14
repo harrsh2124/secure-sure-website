@@ -8,7 +8,7 @@ const Footer = () => {
         'Shubham Complex, Opposite Navrangpura Jain Temple, Navrangpura, Ahmedabad, Gujarat - 380009';
 
     return (
-        <footer className="px-8 pb-12">
+        <footer className="px-8 py-12">
             <div className="flex gap-8 min-h-[20rem] flex-col lg:flex-row">
                 <div className="flex-1 flex flex-col gap-8 lg:my-auto">
                     <div
@@ -113,7 +113,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex gap-1 items-center justify-center mt-5">
+            <div className="flex gap-1 items-center justify-center mt-10">
                 <p>Made at</p>
 
                 <p className="text-[#369df5] font-light">26pa fspl</p>

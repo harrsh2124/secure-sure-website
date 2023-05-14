@@ -9,7 +9,12 @@ const AppWrapper = ({ children }: IProps) => {
     }, []);
 
     return (
-        <div className="px-8 flex-1 min-h-[85vh] md:min-h-[91vh] flex items-center">
+        <div
+            className="px-8 flex items-center"
+            style={{
+                minHeight: '90vh'
+            }}
+        >
             {children}
         </div>
     );

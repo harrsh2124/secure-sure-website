@@ -14,9 +14,7 @@ const poppins = Poppins({
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <main
-            className={`h-screen w-screen flex flex-col ${poppins.className}`}
-        >
+        <main className={`w-screen flex flex-col ${poppins.className}`}>
             <Navbar />
 
             <div className="py-10" />
