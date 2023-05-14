@@ -39,6 +39,7 @@ const Footer = () => {
                         <a
                             href="https://goo.gl/maps/CwZnS48uhhVsdHsH8"
                             className="flex flex-wrap lg:block gap-1"
+                            target="_blank"
                         >
                             <p>301, 302 & 303, Shubham Complex,</p>
 
@@ -70,7 +71,10 @@ const Footer = () => {
                             </svg>
                         </div>
 
-                        <a href={`mailto:${env.contactDetails.email}`}>
+                        <a
+                            href={`mailto:${env.contactDetails.email}`}
+                            target="_blank"
+                        >
                             {env.contactDetails.email}
                         </a>
                     </div>
@@ -95,7 +99,10 @@ const Footer = () => {
                             </svg>
                         </div>
 
-                        <a href={`tel:${env.contactDetails.contactNumber}`}>
+                        <a
+                            href={`tel:${env.contactDetails.contactNumber}`}
+                            target="_blank"
+                        >
                             {env.contactDetails.contactNumber}
                         </a>
                     </div>
@@ -104,6 +111,22 @@ const Footer = () => {
                 <div className="w-full lg:w-7/12 h-[20rem]">
                     <Map address={address} />
                 </div>
+            </div>
+
+            <div className="flex gap-1 items-center justify-center mt-5">
+                <p>Made at</p>
+
+                <p className="text-[#369df5] font-light">26pa fspl</p>
+
+                <p>by</p>
+
+                <a
+                    href="https://www.harrsh.com"
+                    target="_blank"
+                    className="text-[#369df5] font-light"
+                >
+                    Harrsh Patel
+                </a>
             </div>
         </footer>
     );
