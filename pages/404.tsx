@@ -11,7 +11,7 @@ const PageNotFound = () => {
                 <title>Page not found</title>
             </Head>
 
-            <div className="flex items-center justify-evenly md:justify-center flex-col-reverse md:flex-row w-full min-h-[85vh] md:min-h-[91vh]">
+            <div className="flex items-center justify-evenly md:justify-center flex-col-reverse md:flex-row w-full">
                 <Image
                     src={PageNotFoundPng}
                     alt="404, page not found!!"

@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
+import { useEffect } from 'react';
+import AppWrapper from '@/HOC/AppWrapper';
 
 const poppins = Poppins({
     subsets: ['latin-ext'],
@@ -19,9 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
             <div className="py-10" />
 
-            <div className="px-8 flex-1">
+            <AppWrapper>
                 <Component {...pageProps} />
-            </div>
+            </AppWrapper>
 
             <Footer />
         </main>

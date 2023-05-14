@@ -24,7 +24,8 @@ const Map = ({ address }: IProps) => {
                     );
                     new window.google.maps.Marker({
                         position: results[0].geometry.location,
-                        map: newMap
+                        map: newMap,
+                        optimized: true
                     });
                     setIsMapLoaded(true);
                 }

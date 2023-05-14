@@ -1,6 +1,7 @@
 import env from '@/utils/env';
 import React from 'react';
 import Map from './Map';
+import footerCSS from './footer.module.css';
 
 const Footer = () => {
     const address =
@@ -10,7 +11,9 @@ const Footer = () => {
         <footer className="px-8 pb-12">
             <div className="flex gap-8 min-h-[20rem] flex-col lg:flex-row">
                 <div className="flex-1 flex flex-col gap-8 lg:my-auto">
-                    <div className="flex items-center gap-2">
+                    <div
+                        className={`flex items-center gap-2 ${footerCSS.link}`}
+                    >
                         <div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +36,10 @@ const Footer = () => {
                             </svg>
                         </div>
 
-                        <div className="flex flex-wrap lg:block gap-1">
+                        <a
+                            href="https://goo.gl/maps/CwZnS48uhhVsdHsH8"
+                            className="flex flex-wrap lg:block gap-1"
+                        >
                             <p>301, 302 & 303, Shubham Complex,</p>
 
                             <p>Opposite Navrangpura Jain Temple,</p>
@@ -41,10 +47,12 @@ const Footer = () => {
                             <p>Navrangpura, Ahmedabad,</p>
 
                             <p>Gujarat - 380009</p>
-                        </div>
+                        </a>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div
+                        className={`flex items-center gap-2 ${footerCSS.link}`}
+                    >
                         <div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +75,9 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div
+                        className={`flex items-center gap-2 ${footerCSS.link}`}
+                    >
                         <div>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
