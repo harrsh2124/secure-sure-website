@@ -1,38 +1,8 @@
 import env from '@/utils/env';
-import loader from '@/utils/googleMapsLoader';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 
 const Map = ({ address }: IProps) => {
     const [isMapLoaded, setIsMapLoaded] = useState(false);
-
-    useEffect(() => {
-        loader.load().then(() => {
-            const geocoder = new window.google.maps.Geocoder();
-            const mapComponent = document.getElementById('map');
-
-            geocoder.geocode({ address }, (results, status) => {
-                if (status === 'OK' && results && mapComponent) {
-                    const mapOptions: google.maps.MapOptions = {
-                        center: results[0].geometry.location,
-                        zoom: 16,
-                        mapTypeControl: true,
-                        clickableIcons: true,
-                        rotateControl: true
-                    };
-                    const newMap = new window.google.maps.Map(
-                        mapComponent,
-                        mapOptions
-                    );
-                    new window.google.maps.Marker({
-                        position: results[0].geometry.location,
-                        map: newMap,
-                        optimized: true
-                    });
-                    setIsMapLoaded(true);
-                }
-            });
-        });
-    }, [address]);
 
     return (
         <Fragment>
