@@ -1,3 +1,4 @@
+import env from '@/utils/env';
 import loader from '@/utils/googleMapsLoader';
 import { Fragment, useEffect, useState } from 'react';
 
@@ -48,7 +49,16 @@ const Map = ({ address }: IProps) => {
                 </span>
             </div>
 
-            <div id="map" className="h-full" />
+            <iframe
+                width="600"
+                height="450"
+                className="h-full w-full"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed/v1/place?key=${env.api.googleMap}&q=${address}`}
+                onLoad={() => setIsMapLoaded(true)}
+            ></iframe>
         </Fragment>
     );
 };
