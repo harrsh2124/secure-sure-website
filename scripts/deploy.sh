@@ -13,7 +13,7 @@ echo "|------------------------------------|"
 yarn
 
 echo "|----------------------------------|"
-echo "|        Generate the build        |"
+echo "|        Generating the build        |"
 echo "|----------------------------------|"
 yarn build
 
