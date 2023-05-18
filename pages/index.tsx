@@ -10,25 +10,27 @@ const Home = () => {
                 <title>Secure Sure</title>
             </Head>
 
-            <div className="flex gap-10 w-full flex-col md:flex-row mt-0">
-                <div className="flex-1 flex flex-col items-center justify-center gap-8">
-                    <p className="text-7xl font-light uppercase text-center">
+            <div className="flex w-full items-center justify-evenly md:justify-center flex-col md:flex-row">
+                <div className="flex flex-col items-center justify-center gap-6 w-full ">
+                    <p className="text-5xl sm:text-6xl font-light uppercase text-center">
                         Coming soon
                     </p>
 
-                    <p className="text-2xl font-extralight font-sans tracking-widest text-center w-2/3">
+                    <p className="text-lg sm:text-xl font-extralight font-sans tracking-widest text-center w-2/3">
                         We will be celebrating the launch of our new site very
                         soon!
                     </p>
                 </div>
 
-                <Image
-                    src={GroupPhoto}
-                    alt="Group Photo"
-                    quality={100}
-                    width={600}
-                    priority
-                />
+                <div className="relative w-full h-96">
+                    <Image
+                        fill
+                        priority
+                        src={GroupPhoto}
+                        alt="Group Photo"
+                        quality={100}
+                    />
+                </div>
             </div>
         </Fragment>
     );
