@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment } from 'react';
-import PageNotFoundPng from '../public/PageNotFound.png';
+import PageNotFoundPng from '../public/siteImages/PageNotFound.png';
 
 const PageNotFound = () => {
     return (

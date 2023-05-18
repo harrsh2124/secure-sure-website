@@ -1,10 +1,13 @@
-import React from 'react';
+import Image from 'next/image';
+import Logo from '../../public/logo/logo.svg';
 
 const Navbar = () => {
     return (
         <nav className="flex justify-between items-center px-8 py-4 shadow-md fixed w-screen bg-white z-50">
             <div>
-                <p className="text-3xl">Logo</p>
+                <div className="relative wi">
+                    <Image src={Logo} alt="Secure Sure" width={220} />
+                </div>
             </div>
 
             <div className="flex gap-3">
