@@ -20,7 +20,7 @@ yarn build
 echo "|------------------------------|"
 echo "|        Restart server        |"
 echo "|------------------------------|"
-pm2 restart assurely-website --update-env
+pm2 restart secure-sure-website --update-env
 
 echo "|-------------------------------------|"
 echo "|        Deployment successful        |"
