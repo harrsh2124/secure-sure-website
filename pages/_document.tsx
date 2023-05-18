@@ -34,7 +34,7 @@ export default function Document() {
                 <script
                     dangerouslySetInnerHTML={{
                         __html: `
-              window.dataLayer = window.dataLayer || [];
+                window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${GA_TRACKING_ID}', {
@@ -42,6 +42,11 @@ export default function Document() {
               });
           `
                     }}
+                />
+
+                <meta
+                    name="ahrefs-site-verification"
+                    content="f4cf027644808afb9fee1d65962a88bb7ed4355e72bb4e1e6b5f5f638c242c66"
                 />
             </Head>
 
