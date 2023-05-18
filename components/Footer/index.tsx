@@ -40,6 +40,7 @@ const Footer = () => {
                             href="https://goo.gl/maps/CwZnS48uhhVsdHsH8"
                             className="flex flex-wrap lg:block gap-1"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <p>301, 302 & 303, Shubham Complex,</p>
 
@@ -74,8 +75,13 @@ const Footer = () => {
                         <a
                             href={`mailto:${env.contactDetails.email}`}
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            {env.contactDetails.email}
+                            <div
+                                dangerouslySetInnerHTML={{
+                                    __html: env.contactDetails.htmlEmail
+                                }}
+                            />
                         </a>
                     </div>
 
@@ -102,8 +108,9 @@ const Footer = () => {
                         <a
                             href={`tel:${env.contactDetails.contactNumber}`}
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            {env.contactDetails.contactNumber}
+                            {env.contactDetails.htmlContactNumber}
                         </a>
                     </div>
                 </div>
@@ -123,6 +130,7 @@ const Footer = () => {
                 <a
                     href="https://www.harrsh.com"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#369df5] font-light"
                 >
                     Harrsh Patel

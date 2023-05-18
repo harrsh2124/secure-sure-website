@@ -7,6 +7,11 @@ const Navbar = () => {
             <div>
                 <div className="relative wi">
                     <Image src={Logo} alt="Secure Sure" width={220} />
+
+                    <h1 className="hidden">Secure Sure</h1>
+                    <h2 className="hidden">
+                        Leading insurance agency in India.
+                    </h2>
                 </div>
             </div>
 

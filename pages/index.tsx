@@ -8,6 +8,7 @@ const Home = () => {
         <Fragment>
             <Head>
                 <title>Secure Sure</title>
+                <link rel="canonical" href="https://securesure.in" />
             </Head>
 
             <div className="flex w-full items-center justify-evenly md:justify-center flex-col md:flex-row">

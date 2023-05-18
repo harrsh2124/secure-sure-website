@@ -9,6 +9,7 @@ const PageNotFound = () => {
         <Fragment>
             <Head>
                 <title>Page not found</title>
+                <link rel="canonical" href="https://securesure.in/404" />
             </Head>
 
             <div className="flex items-center justify-evenly md:justify-center flex-col-reverse md:flex-row w-full">
