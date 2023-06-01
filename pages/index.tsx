@@ -1,5 +1,6 @@
 import Associated from '@/components/Home/Associated';
 import Hero from '@/components/Home/Hero';
+import Services from '@/components/Home/Services';
 import Head from 'next/head';
 import { Fragment } from 'react';
 
@@ -10,9 +11,10 @@ const Home = () => {
                 <title>Home</title>
             </Head>
 
-            <div className="px-[50px] xl:px-[150px]">
+            <div>
                 <Hero />
                 <Associated />
+                <Services />
             </div>
         </Fragment>
     );

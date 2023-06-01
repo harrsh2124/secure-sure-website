@@ -10,7 +10,7 @@ import HeroVector from '../../public/assets/heroVector.svg';
 
 const Hero = () => {
     return (
-        <div className="flex items-center mt-[90px] gap-[50px]">
+        <div className="flex items-center mt-[90px] gap-[50px] px-[50px] xl:px-[150px]">
             <div className="w-1/2">
                 <h1 className="font-[700] text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] text-[#546FFF]">
                     Your Trusted Source for Comprehensive Coverage
