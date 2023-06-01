@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Navbar = () => {
     return (
         <nav>
-            <div className="h-[70px] w-screen fixed flex items-center justify-between shadow-md px-8 py-4">
+            <div className="h-[70px] w-screen fixed flex items-center justify-between px-8 py-4 bg-[#FFFFFF]">
                 <Link href="/">
                     <Image src={Logo} alt="Secure Sure" width={220} priority />
                 </Link>
