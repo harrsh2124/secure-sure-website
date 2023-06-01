@@ -1,3 +1,4 @@
+import Hero from '@/components/Home/Hero';
 import Head from 'next/head';
 import { Fragment } from 'react';
 
@@ -8,8 +9,8 @@ const Home = () => {
                 <title>Home</title>
             </Head>
 
-            <div>
-                <p>Home</p>
+            <div className="px-[50px] xl:px-[150px]">
+                <Hero />
             </div>
         </Fragment>
     );

@@ -5,10 +5,11 @@
 
 .navLinks > a {
     cursor: pointer;
+    font-weight: 400;
 }
 
 .active {
     color: #546fff;
     border-bottom: 2px solid #546fff;
-    font-weight: 500;
+    font-weight: 500 !important;
 }
