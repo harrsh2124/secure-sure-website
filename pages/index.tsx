@@ -1,8 +1,17 @@
+import Head from 'next/head';
+import { Fragment } from 'react';
+
 const Home = () => {
     return (
-        <div>
-            <p>Home</p>
-        </div>
+        <Fragment>
+            <Head>
+                <title>Home</title>
+            </Head>
+
+            <div>
+                <p>Home</p>
+            </div>
+        </Fragment>
     );
 };
 

@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { Space_Grotesk } from 'next/font/google';
 
 import '@/styles/globals.css';
+import Navbar from '@/components/Navbar';
 
 const font = Space_Grotesk({
     preload: true,
@@ -12,6 +13,7 @@ const font = Space_Grotesk({
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <main className={`${font.className}`}>
+            <Navbar />
             <Component {...pageProps} />
         </main>
     );
