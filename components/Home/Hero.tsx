@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import HeroVector from '../../public/assets/heroVector.svg';
-import React from 'react';
 import Link from 'next/link';
 import One from '../../public/assets/Home/1.svg';
 import Two from '../../public/assets/Home/2.svg';
@@ -8,6 +6,7 @@ import ManOne from '../../public/assets/Home/People/1.jpg';
 import ManTwo from '../../public/assets/Home/People/2.jpg';
 import ManThree from '../../public/assets/Home/People/3.jpg';
 import ManFour from '../../public/assets/Home/People/4.jpg';
+import HeroVector from '../../public/assets/heroVector.svg';
 
 const Hero = () => {
     return (
@@ -24,14 +23,16 @@ const Hero = () => {
                 </p>
 
                 <div className="flex gap-[25px] my-[40px]">
-                    <div className="bg-[#546FFF] py-[10px] px-[35px] rounded-[100px] text-white">
+                    <div className="bg-[#546FFF] py-[10px] px-[35px] rounded-[100px] text-white cursor-pointer">
                         <p>Chat with us</p>
                     </div>
 
                     <div className="relative">
-                        <div className="bg-[#E1FFF1] border border-[#309C68] text-[#309C68] py-[10px] px-[35px] rounded-[100px]">
-                            <Link href="/services">Explore services</Link>
-                        </div>
+                        <Link href="/services">
+                            <div className="bg-[#E1FFF1] border border-[#309C68] text-[#309C68] py-[10px] px-[35px] rounded-[100px]">
+                                Explore services
+                            </div>
+                        </Link>
 
                         <Image
                             src={One}
