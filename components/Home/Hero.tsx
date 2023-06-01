@@ -2,12 +2,12 @@ import Image from 'next/image';
 import HeroVector from '../../public/assets/heroVector.svg';
 import React from 'react';
 import Link from 'next/link';
-import One from '../../public/assets/home/1.svg';
-import Two from '../../public/assets/home/2.svg';
-import ManOne from '../../public/assets/home/People/1.jpg';
-import ManTwo from '../../public/assets/home/People/2.jpg';
-import ManThree from '../../public/assets/home/People/3.jpg';
-import ManFour from '../../public/assets/home/People/4.jpg';
+import One from '../../public/assets/Home/1.svg';
+import Two from '../../public/assets/Home/2.svg';
+import ManOne from '../../public/assets/Home/People/1.jpg';
+import ManTwo from '../../public/assets/Home/People/2.jpg';
+import ManThree from '../../public/assets/Home/People/3.jpg';
+import ManFour from '../../public/assets/Home/People/4.jpg';
 
 const Hero = () => {
     return (
