@@ -1,5 +1,9 @@
 import Image from 'next/image';
 import Header from '../../public/assets/Home/Advantages/Header.svg';
+import Fast from '../../public/assets/Home/Advantages/FastAdvantage.svg';
+import Secure from '../../public/assets/Home/Advantages/SecureAdvantage.svg';
+import Simple from '../../public/assets/Home/Advantages/SimpleAdvantage.svg';
+import Tick from '../../public/assets/Home/Advantages/tick.svg';
 import React, { useEffect, useState } from 'react';
 
 const Advantages = () => {
@@ -13,7 +17,7 @@ const Advantages = () => {
                     return 1;
                 } else return prev + 1;
             });
-        }, 5000);
+        }, 10000);
 
         return () => {
             console.log('Clear interval');
@@ -22,7 +26,7 @@ const Advantages = () => {
     }, [toggleResetActiveTab]);
 
     return (
-        <div className="text-[#546FFF] px-[50px] xl:px-[150px] py-[60px]">
+        <div className="text-[#546FFF] px-[50px] xl:px-[150px] my-[60px]">
             <div className="flex justify-between items-center">
                 <div className="relative">
                     <p className="font-[700] text-[30px]">
@@ -32,7 +36,7 @@ const Advantages = () => {
                     <Image
                         src={Header}
                         alt="Advantages with Policy Wise"
-                        className="absolute bottom-[-10px] right-[-15px]"
+                        className="absolute bottom-[-8px] right-[-15px]"
                         width={15}
                     />
                 </div>
@@ -46,7 +50,7 @@ const Advantages = () => {
                                     setToggleResetActiveTab((prev) => !prev);
                                 }}
                                 key={advantage.id}
-                                className={`py-2 px-8 rounded-full transition duration-500 ${
+                                className={`py-2 px-8 rounded-full transition duration-500 cursor-pointer ${
                                     activeTab === advantage.id
                                         ? 'bg-[#546FFF] text-white'
                                         : 'bg-[#EAF2FF]'
@@ -57,6 +61,60 @@ const Advantages = () => {
                         );
                     })}
                 </div>
+            </div>
+
+            <div className="my-[60px]">
+                {AdvantagesList.map((advantage) => {
+                    return (
+                        <div
+                            key={advantage.id}
+                            className={`items-center justify-between h-[450px] ${
+                                advantage.id === activeTab ? 'flex' : 'hidden'
+                            }`}
+                        >
+                            <div className="w-[450px] h-[400px] flex items-center justify-center">
+                                <Image
+                                    src={advantage.icon}
+                                    alt={advantage.title}
+                                    width={300}
+                                />
+                            </div>
+
+                            <div>
+                                <p className="font-[700] text-[25px]">
+                                    {advantage.title}
+                                </p>
+
+                                <p className="text-[#535353] mt-5 mb-8 max-w-xl">
+                                    {advantage.description}
+                                </p>
+
+                                <div className="flex flex-col gap-6">
+                                    {advantage.points.map((point, index) => {
+                                        return (
+                                            <div
+                                                key={index}
+                                                className="flex items-center gap-4"
+                                            >
+                                                <div className="rounded-full bg-[#EAF2FF] p-3">
+                                                    <Image
+                                                        src={Tick}
+                                                        alt={point}
+                                                        width={15}
+                                                    />
+                                                </div>
+
+                                                <p className="font-[500]">
+                                                    {point}
+                                                </p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );
@@ -78,3 +136,50 @@ const AdvantagesTitle = [
         title: 'Secure'
     }
 ];
+
+const AdvantagesList = [
+    {
+        id: 1,
+        title: 'Simplest way to choose best suitable policy',
+        description:
+            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.',
+        points: [
+            'No research required. We will suggest you',
+            'No research required. We will suggest you',
+            'No research required. We will suggest you'
+        ],
+        icon: Simple
+    },
+    {
+        id: 2,
+        title: 'Simplest way to choose best suitable policy',
+        description:
+            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.',
+        points: [
+            'No research required. We will suggest you',
+            'No research required. We will suggest you',
+            'No research required. We will suggest you'
+        ],
+        icon: Fast
+    },
+    {
+        id: 3,
+        title: 'Simplest way to choose best suitable policy',
+        description:
+            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.',
+        points: [
+            'No research required. We will suggest you',
+            'No research required. We will suggest you',
+            'No research required. We will suggest you'
+        ],
+        icon: Secure
+    }
+];
+
+/**
+ * // ${
+                            //     advantage.id === activeTab
+                            //         ? 'opacity-100 h-full'
+                            //         : 'opacity-0 h-0'
+                            // }
+*/
