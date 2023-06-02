@@ -16,7 +16,7 @@ const Hero = () => {
                     Your Trusted Source for Comprehensive Coverage
                 </h1>
 
-                <p className="mt-[25px]">
+                <p className="font-[500] mt-[25px]">
                     Trust us to be your reliable partner in navigating the
                     complex world of insurance, as we strive to exceed your
                     expectations and deliver unparalleled customer satisfaction.

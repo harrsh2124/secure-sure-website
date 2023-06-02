@@ -38,8 +38,8 @@ const Associated = () => {
                 />
 
                 <Link href="/services">
-                    <div className="flex items-center gap-1">
-                        <p className="text-[#546FFF]">See more</p>
+                    <div className="flex flex-col gap-1">
+                        <p className="text-[#546FFF]">And many more</p>
 
                         <Image src={Three} alt="Right icon" width={20} />
                     </div>
