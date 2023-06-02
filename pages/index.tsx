@@ -1,3 +1,4 @@
+import Advantages from '@/components/Home/Advantages';
 import Associated from '@/components/Home/Associated';
 import Hero from '@/components/Home/Hero';
 import Services from '@/components/Home/Services';
@@ -15,6 +16,7 @@ const Home = () => {
                 <Hero />
                 <Associated />
                 <Services />
+                <Advantages />
             </div>
         </Fragment>
     );

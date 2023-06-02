@@ -1,11 +1,10 @@
-import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
 import Image from 'next/image';
+import ArrowRight from '../../public/assets/Home/Services/arrowRight.svg';
 import CarGreen from '../../public/assets/Home/Services/carGreen.svg';
 import FamilyGreen from '../../public/assets/Home/Services/familyGreen.svg';
 import HeartGreen from '../../public/assets/Home/Services/heartGreen.svg';
 import UmbrellaGreen from '../../public/assets/Home/Services/umbrellaGreen.svg';
-import ArrowRight from '../../public/assets/Home/Services/arrowRight.svg';
-import React from 'react';
+import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
 
 const Services = () => {
     return (
