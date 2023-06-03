@@ -1,5 +1,6 @@
 import Advantages from '@/components/Home/Advantages';
 import Associated from '@/components/Home/Associated';
+import FAQ from '@/components/Home/FAQ';
 import Hero from '@/components/Home/Hero';
 import Process from '@/components/Home/Process';
 import Services from '@/components/Home/Services';
@@ -19,6 +20,7 @@ const Home = () => {
                 <Services />
                 <Advantages />
                 <Process />
+                <FAQ />
             </div>
         </Fragment>
     );
