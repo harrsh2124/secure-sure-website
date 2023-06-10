@@ -12,7 +12,10 @@ const Home = () => {
     return (
         <Fragment>
             <Head>
-                <title>Home</title>
+                <title>
+                    Secure Sure Insurance Agency - Best Insurance Agency India
+                    Protecting What Matters Most to You
+                </title>
             </Head>
 
             <div>

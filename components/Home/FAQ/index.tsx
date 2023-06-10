@@ -49,26 +49,31 @@ export default FAQ;
 const FAQs = [
     {
         id: 1,
-        title: 'Title',
+        title: 'What is Secure Sure?',
         description:
-            'The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2012.” “The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their.'
+            'It is an insurance agency that assists you in making informed decisions while buying insurance.'
     },
     {
         id: 2,
-        title: 'Title',
+        title: 'What do we do?',
         description:
-            'The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2012.” “The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their.'
+            'We have skilled and seasoned insurance advisors who will talk with you and resolve all your queries. After that, they suggest customized insurance solutions to make a purchase. All you need to do is schedule a free consultation call.'
     },
     {
         id: 3,
-        title: 'Title',
-        description:
-            'The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2012.” “The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their.'
+        title: 'Are your services free?',
+        description: 'Yes, it is free.'
     },
     {
         id: 4,
-        title: 'Title',
+        title: 'Why are you doing it for free?',
         description:
-            'The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their services in 2012.” “The Lorem Ipsum Company has been an integral part of our content marketing success. We have seen a notable increase in organic leads since we began using their.'
+            'We truly believe that financial literacy and information should be made accessible to people without breaking their bank accounts. For that, we will go the extra mile and transform our dream into reality.'
+    },
+    {
+        id: 5,
+        title: 'How do you make money?',
+        description:
+            'When you buy an insurance policy via Secure Sure, we earn a small commission from the insurance companies. This is how we make money.'
     }
 ];

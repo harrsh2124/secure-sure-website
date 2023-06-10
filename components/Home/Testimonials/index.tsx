@@ -23,7 +23,7 @@ const Testimonials = () => {
             <p>Testimonials</p>
 
             <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
-                What lovely people talk about us
+                What our customers are saying about us
             </h2>
 
             <div className="flex items-center gap-8">
@@ -51,9 +51,7 @@ const Testimonials = () => {
                                         : 'block'
                                 }`}
                             >
-                                <p>
-                                    {testimonial.id} {testimonial.description}
-                                </p>
+                                <p>{testimonial.description}</p>
                             </div>
                         );
                     })}
@@ -78,17 +76,17 @@ const testimonials = [
     {
         id: 1,
         description:
-            'Fiest testimonial Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a'
+            'Secure Sure Insurance Agency provided me with first-rate service and helped me find the perfect health insurance plan for my family. Their knowledgeable team members made the process simple and stress-free. I highly recommend them!'
     },
     {
         id: 2,
         description:
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a'
+            'I highly recommend Secure Sure for their exceptional customer service and prompt claim settlement. They truly care about their clients.'
     },
     {
         id: 3,
         description:
-            'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a'
+            "Secure Sure's travel insurance saved the day when my flight was canceled. Their quick response and support were commendable."
     },
     {
         id: 4,

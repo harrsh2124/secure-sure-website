@@ -13,13 +13,18 @@ const Hero = () => {
         <div className="flex items-center mt-[90px] gap-[50px] px-[50px] xl:px-[150px]">
             <div className="w-1/2">
                 <h1 className="font-[700] text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] text-[#546FFF]">
-                    Your Trusted Source for Comprehensive Coverage
+                    We help you find the best Insurance Plan at the right price
                 </h1>
 
                 <p className="font-[500] mt-[25px]">
-                    Trust us to be your reliable partner in navigating the
-                    complex world of insurance, as we strive to exceed your
-                    expectations and deliver unparalleled customer satisfaction.
+                    Do you want to protect your future and ensure your peace of
+                    mind? At Secure Sure Insurance Agency, we understand the
+                    importance of safeguarding. We offer comprehensive insurance
+                    services with reliable coverage, the best insurance advice,
+                    and customized solutions tailored to your specific needs.
+                    Whether you need health insurance, term insurance, travel
+                    insurance, or vehicle insurance, you will get all under one
+                    roof.
                 </p>
 
                 <div className="flex gap-[25px] my-[40px]">

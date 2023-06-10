@@ -12,13 +12,16 @@ const Services = () => {
             <p>Services</p>
 
             <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
-                What we offer to you
+                Let&apos;s Brief You About Our Services
             </h2>
 
             <p className="text-center px-[13rem] mb-[2rem]">
-                Trust us to be your reliable partner in navigating the complex
-                world of insurance, as we strive to exceed your expectations and
-                deliver unparalleled customer satisfaction.
+                At Secure Sure, we help you select the best insurance policy
+                that perfectly suits your needs. Our services are not limited to
+                helping you buy the policy, but we also help you with the claim
+                process in case you need to use the policy. To cut the story
+                short, we are a one-stop solution for all your insurance-related
+                requirements.
             </p>
 
             <div className="grid grid-cols-2 w-full gap-6 xl:gap-8">
@@ -74,27 +77,27 @@ const services = [
         icon: HeartGreen,
         title: 'Health insurance',
         description:
-            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.'
+            'We are one of the the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.'
     },
     {
         id: 2,
-        icon: CarGreen,
-        title: 'Health insurance',
+        icon: FamilyGreen,
+        title: 'Life Insurance',
         description:
-            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.'
+            "With our best life insurance policies, you can secure your family's future. At Secure Sure - one of the the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70."
     },
     {
         id: 3,
-        icon: FamilyGreen,
-        title: 'Health insurance',
+        icon: CarGreen,
+        title: 'Vehicle Insurance',
         description:
-            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.'
+            'Whether you own two-wheelers or four-wheelers, we have got you covered. We are one of the the best automobile insurance agency in India and our vehicle insurance plans provide complete coverage against accidents, theft, and damages. So, if you want to hit the road with confidence, knowing that you are protected 24*7, call us to learn more about our reliable vehicle insurance policies.'
     },
     {
         id: 4,
         icon: UmbrellaGreen,
-        title: 'Health insurance',
+        title: 'Travel Insurance',
         description:
-            'Trust us to be your reliable partner in navigating the complex world of insurance, as we strive to exceed your expectations and deliver unparalleled customer satisfaction.'
+            'Want to explore the world worry-free? Opt for our best travel insurance plans. We understand that unexpected events such as trip cancellation, medical emergencies, or lost baggage can occur during your travels. At that time, our travel insurance plans offer you financial protection and assistance by ensuring that you can enjoy your trip without any hassle.'
     }
 ];
