@@ -13,8 +13,8 @@ const Home = () => {
         <Fragment>
             <Head>
                 <title>
-                    Secure Sure Insurance Agency - Best Insurance Agency India
-                    Protecting What Matters Most to You
+                    Home | Secure Sure Insurance Agency - Your Trusted Insurance
+                    Partner
                 </title>
             </Head>
 

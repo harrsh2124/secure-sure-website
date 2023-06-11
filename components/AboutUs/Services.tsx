@@ -24,7 +24,7 @@ const Services = () => {
                 requirements.
             </p>
 
-            <div className="grid grid-cols-2 w-full gap-6 xl:gap-8">
+            <div className="grid grid-cols-2 w-full gap-6 xl:gap-8 mb-3">
                 {services.map((service) => {
                     return (
                         <div
@@ -59,12 +59,6 @@ const Services = () => {
                     );
                 })}
             </div>
-
-            <div className="flex items-center rounded-full border-2 border-[#309C68]/40 py-3 px-5 mt-10 gap-4 cursor-pointer">
-                <p className="font-[700]">Contact us for more services</p>
-
-                <Image src={LetsTalkMessage} alt="Let's talk" width={15} />
-            </div>
         </div>
     );
 };
@@ -97,6 +91,20 @@ const services = [
         id: 4,
         icon: UmbrellaGreen,
         title: 'Travel Insurance',
+        description:
+            'Want to explore the world worry-free? Opt for our best travel insurance plans. We understand that unexpected events such as trip cancellation, medical emergencies, or lost baggage can occur during your travels. At that time, our travel insurance plans offer you financial protection and assistance by ensuring that you can enjoy your trip without any hassle.'
+    },
+    {
+        id: 5,
+        icon: UmbrellaGreen,
+        title: 'Travel Insurance',
+        description:
+            'Want to explore the world worry-free? Opt for our best travel insurance plans. We understand that unexpected events such as trip cancellation, medical emergencies, or lost baggage can occur during your travels. At that time, our travel insurance plans offer you financial protection and assistance by ensuring that you can enjoy your trip without any hassle.'
+    },
+    {
+        id: 6,
+        icon: LetsTalkMessage,
+        title: 'Contact us for more services',
         description:
             'Want to explore the world worry-free? Opt for our best travel insurance plans. We understand that unexpected events such as trip cancellation, medical emergencies, or lost baggage can occur during your travels. At that time, our travel insurance plans offer you financial protection and assistance by ensuring that you can enjoy your trip without any hassle.'
     }

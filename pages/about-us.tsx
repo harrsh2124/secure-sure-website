@@ -1,3 +1,6 @@
+import ContactUs from '@/components/AboutUs/ContactUs';
+import Hero from '@/components/AboutUs/Hero';
+import Services from '@/components/AboutUs/Services';
 import Head from 'next/head';
 import React, { Fragment } from 'react';
 
@@ -8,7 +11,11 @@ const AboutUs = () => {
                 <title>About Us</title>
             </Head>
 
-            <div>AboutUs</div>
+            <div>
+                <Hero />
+                <Services />
+                <ContactUs />
+            </div>
         </Fragment>
     );
 };
