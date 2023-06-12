@@ -1,6 +1,13 @@
+import Image from 'next/image';
+import { FormEvent } from 'react';
+import ArrowRight from '../../public/assets/AboutUs/arrowRight.svg';
 import Map from './Map';
 
 const ContactUs = () => {
+    const handleSubmitForm = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    };
+
     const address =
         'Shubham Complex, Opposite Navrangpura Jain Temple, Navrangpura, Ahmedabad, Gujarat - 380009';
 
@@ -16,6 +23,7 @@ const ContactUs = () => {
                 <form
                     className="w-1/2 flex flex-col justify-center items-center gap-4 py-10"
                     autoComplete="off"
+                    onSubmit={handleSubmitForm}
                 >
                     <div className="w-full flex gap-4">
                         <input
@@ -62,7 +70,16 @@ const ContactUs = () => {
                         />
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button
+                        type="submit"
+                        className="flex items-center gap-5 py-3 px-8 rounded-full bg-[#546FFF] text-white cursor-pointer"
+                    >
+                        <p>Submit</p>
+
+                        <div className="w-[25px] h-[20px] relative">
+                            <Image src={ArrowRight} alt="Submit button" fill />
+                        </div>
+                    </button>
                 </form>
 
                 <div className="flex-1 py-6">
