@@ -4,6 +4,7 @@ import { Space_Grotesk } from 'next/font/google';
 import '@/styles/globals.css';
 import Navbar from '@/components/Navbar';
 import WhatsApp from '@/components/WhatsApp';
+import Footer from '@/components/Footer';
 
 const font = Space_Grotesk({
     preload: true,
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <Navbar />
             <WhatsApp />
             <Component {...pageProps} />
+            <Footer />
         </main>
     );
 }

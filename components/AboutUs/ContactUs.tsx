@@ -12,7 +12,7 @@ const ContactUs = () => {
         'Shubham Complex, Opposite Navrangpura Jain Temple, Navrangpura, Ahmedabad, Gujarat - 380009';
 
     return (
-        <div className="text-[#546FFF] px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
+        <div className="text-[#546FFF] px-[50px] xl:px-[150px] pt-[60px] flex flex-col items-center">
             <p>Contact Us</p>
 
             <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
