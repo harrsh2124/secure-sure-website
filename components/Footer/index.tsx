@@ -10,7 +10,9 @@ const Footer = () => {
     return (
         <div className="px-[50px] xl:px-[150px] py-[60px] grid grid-cols-4">
             <div className="flex flex-col">
-                <p>Secure Sure</p>
+                <p className="text-2xl font-medium mb-3 text-[#546FFF]">
+                    Secure Sure
+                </p>
 
                 <div className="flex gap-4">
                     {SocialMediaList.map((icon, index) => {
@@ -32,32 +34,58 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col">
-                <p>Features</p>
+            <div className="flex flex-col gap-3">
+                <p className="text-[#546FFF] text-lg font-medium w-fit">
+                    Features
+                </p>
 
                 {FeaturesList.map((feature, index) => {
-                    return <p key={index}>{feature}</p>;
+                    return (
+                        <p key={index} className="w-fit">
+                            {feature}
+                        </p>
+                    );
                 })}
             </div>
 
-            <div className="flex flex-col">
-                <p>Navigation</p>
+            <div className="flex flex-col gap-3">
+                <p className="text-[#546FFF] text-lg font-medium w-fit">
+                    Navigation
+                </p>
 
                 {NavigationList.map((navigation) => {
                     return (
-                        <Link href={navigation.url} key={navigation.id}>
+                        <Link
+                            href={navigation.url}
+                            key={navigation.id}
+                            className="w-fit"
+                        >
                             {navigation.title}
                         </Link>
                     );
                 })}
             </div>
 
-            <div className="flex flex-col">
-                <p>Contact details</p>
+            <div className="flex flex-col gap-3">
+                <p className="text-[#546FFF] text-lg font-medium w-fit">
+                    Contact details
+                </p>
 
-                <p>{process.env.NEXT_PUBLIC_EMAIL_ADDRESS}</p>
+                <Link
+                    href={`mailto:${process.env.NEXT_PUBLIC_EMAIL_ADDRESS}`}
+                    target="_blank"
+                    className="w-fit"
+                >
+                    {process.env.NEXT_PUBLIC_EMAIL_ADDRESS}
+                </Link>
 
-                <p>{process.env.NEXT_PUBLIC_HTML_CONTACT_NUMBER}</p>
+                <Link
+                    href={`tel:${process.env.NEXT_PUBLIC_CONTACT_NUMBER}`}
+                    target="_blank"
+                    className="w-fit"
+                >
+                    {process.env.NEXT_PUBLIC_HTML_CONTACT_NUMBER}
+                </Link>
             </div>
         </div>
     );
