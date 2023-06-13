@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const WhatsApp = () => {
     const handleOnLogoClick = () => {
-        window.open('https://wa.me/+919099976321');
+        window.open(`https://wa.me/${process.env.NEXT_PUBLIC_CONTACT_NUMBER}`);
     };
 
     return (
