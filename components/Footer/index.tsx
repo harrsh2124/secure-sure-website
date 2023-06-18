@@ -1,12 +1,17 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
 // import FaceBook from '../../public/assets/Footer/facebook.svg';
 import Instagram from '../../public/assets/Footer/instagram.svg';
 // import Twitter from '../../public/assets/Footer/twitter.svg';
 import Google from '../../public/assets/Footer/google.svg';
 import Image from 'next/image';
+import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
+    const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
+    const router = useRouter();
+
     return (
         <div className="px-[50px] xl:px-[150px] py-[60px] grid grid-cols-4">
             <div className="flex flex-col">
@@ -45,8 +50,18 @@ const Footer = () => {
 
                 {FeaturesList.map((feature, index) => {
                     return (
-                        <p key={index} className="w-fit">
-                            {feature}
+                        <p
+                            key={feature.id}
+                            className="w-fit cursor-pointer"
+                            onClick={() => {
+                                if (feature.url) {
+                                    router.push(feature.url);
+                                } else {
+                                    handleOpenModal();
+                                }
+                            }}
+                        >
+                            {feature.title}
                         </p>
                     );
                 })}
@@ -98,11 +113,28 @@ const Footer = () => {
 export default Footer;
 
 const FeaturesList = [
-    'Health insurance',
-    'Health insurance',
-    'Health insurance',
-    'Health insurance',
-    'Health insurance'
+    {
+        id: 1,
+        title: 'Health insurance',
+        url: '/services'
+    },
+    {
+        id: 2,
+        title: 'Life Insurance',
+        url: '/services'
+    },
+    {
+        id: 3,
+        title: 'Car Insurance'
+    },
+    {
+        id: 4,
+        title: 'Two-wheeler Insurance'
+    },
+    {
+        id: 5,
+        title: 'Travel Insurance'
+    }
 ];
 
 const NavigationList = [
