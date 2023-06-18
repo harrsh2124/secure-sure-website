@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import FaceBook from '../../public/assets/Footer/facebook.svg';
+// import FaceBook from '../../public/assets/Footer/facebook.svg';
 import Instagram from '../../public/assets/Footer/instagram.svg';
-import Twitter from '../../public/assets/Footer/twitter.svg';
+// import Twitter from '../../public/assets/Footer/twitter.svg';
 import Google from '../../public/assets/Footer/google.svg';
 import Image from 'next/image';
 
@@ -15,19 +15,23 @@ const Footer = () => {
                 </p>
 
                 <div className="flex gap-4">
-                    {SocialMediaList.map((icon, index) => {
+                    {SocialMediaList.map((socialMedia, index) => {
                         return (
                             <div
                                 key={index}
                                 className="bg-[#546FFF] rounded-full p-2 flex cursor-pointer"
                             >
-                                <div className="relative w-5 h-5 m-auto">
+                                <Link
+                                    href={socialMedia.link}
+                                    target="_blank"
+                                    className="relative w-5 h-5 m-auto"
+                                >
                                     <Image
-                                        src={icon}
+                                        src={socialMedia.icon}
                                         alt="Social media icon"
                                         fill
                                     />
-                                </div>
+                                </Link>
                             </div>
                         );
                     })}
@@ -129,4 +133,19 @@ const NavigationList = [
     }
 ];
 
-const SocialMediaList = [Google, Instagram, FaceBook, Twitter];
+const SocialMediaList = [
+    {
+        icon: Google,
+        link: 'https://www.google.com/search?q=secure%20sure'
+    },
+    {
+        icon: Instagram,
+        link: 'https://www.instagram.com/securesure.in'
+    }
+    // {
+    //     icon: FaceBook
+    // },
+    // {
+    //     icon: Twitter
+    // }
+];
