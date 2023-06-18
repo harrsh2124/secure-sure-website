@@ -1,3 +1,5 @@
+import Hero from '@/components/Alliance/Hero';
+import List from '@/components/Alliance/List';
 import Head from 'next/head';
 import React, { Fragment } from 'react';
 
@@ -8,7 +10,10 @@ const Services = () => {
                 <title>Services</title>
             </Head>
 
-            <div>Services</div>
+            <div>
+                <Hero />
+                <List />
+            </div>
         </Fragment>
     );
 };
