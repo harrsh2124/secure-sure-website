@@ -9,6 +9,7 @@ import ManTwo from '../../public/assets/Home/People/2.jpg';
 import ManThree from '../../public/assets/Home/People/3.jpg';
 import ManFour from '../../public/assets/Home/People/4.jpg';
 import HeroVector from '../../public/assets/heroVector.svg';
+import { links } from '@/utils/constants';
 
 const Hero = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
@@ -38,7 +39,7 @@ const Hero = () => {
                     </div>
 
                     <div className="relative">
-                        <Link href="/services">
+                        <Link href={links.alliance}>
                             <div className="bg-[#E1FFF1] border border-[#309C68] text-[#309C68] py-[10px] px-[35px] rounded-[100px]">
                                 Explore services
                             </div>

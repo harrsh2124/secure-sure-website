@@ -8,6 +8,7 @@ import FamilyGreen from '../../public/assets/Home/Services/familyGreen.svg';
 import HeartGreen from '../../public/assets/Home/Services/heartGreen.svg';
 import UmbrellaGreen from '../../public/assets/Home/Services/umbrellaGreen.svg';
 import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
+import { links } from '@/utils/constants';
 
 const Services = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
@@ -96,7 +97,7 @@ const services = [
         title: 'Health insurance',
         description:
             'We are the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.',
-        url: '/services'
+        url: links.alliance
     },
     {
         id: 2,
@@ -104,7 +105,7 @@ const services = [
         title: 'Life Insurance',
         description:
             "With our best life insurance policies, you can secure your family's future. At Secure Sure - the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70.",
-        url: '/services'
+        url: links.alliance
     },
     {
         id: 3,

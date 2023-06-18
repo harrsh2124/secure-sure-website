@@ -7,6 +7,7 @@ import Google from '../../public/assets/Footer/google.svg';
 import Image from 'next/image';
 import { InitialValuesType, ModelContext } from '@/context/modal.context';
 import { useRouter } from 'next/router';
+import { links } from '@/utils/constants';
 
 const Footer = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
@@ -116,12 +117,12 @@ const FeaturesList = [
     {
         id: 1,
         title: 'Health insurance',
-        url: '/services'
+        url: links.alliance
     },
     {
         id: 2,
         title: 'Life Insurance',
-        url: '/services'
+        url: links.alliance
     },
     {
         id: 3,
@@ -141,27 +142,27 @@ const NavigationList = [
     {
         id: 'home',
         title: 'Home',
-        url: '/'
+        url: links.home
     },
     {
         id: 'services',
         title: 'Services',
-        url: '/services'
+        url: links.alliance
     },
     {
         id: 'brochures',
         title: 'Brochures',
-        url: '/brochures'
+        url: links.brochures
     },
     {
         id: 'forms',
         title: 'Forms',
-        url: '/forms'
+        url: links.forms
     },
     {
         id: 'about-us',
         title: 'About Us',
-        url: '/about-us'
+        url: links.aboutUs
     }
 ];
 

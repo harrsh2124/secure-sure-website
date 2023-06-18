@@ -4,6 +4,7 @@ import Logo from '../../public/logo/logo.svg';
 import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { links } from '@/utils/constants';
 
 const Navbar = () => {
     const router = useRouter();
@@ -62,26 +63,26 @@ const navbarLinks = [
     {
         id: 'home',
         title: 'Home',
-        url: '/'
+        url: links.home
     },
     {
-        id: 'services',
-        title: 'Services',
-        url: '/services'
+        id: 'alliance',
+        title: 'Alliance',
+        url: links.alliance
     },
     {
         id: 'brochures',
         title: 'Brochures',
-        url: '/brochures'
+        url: links.brochures
     },
     {
         id: 'forms',
         title: 'Forms',
-        url: '/forms'
+        url: links.forms
     },
     {
         id: 'about-us',
         title: 'About Us',
-        url: '/about-us'
+        url: links.aboutUs
     }
 ];

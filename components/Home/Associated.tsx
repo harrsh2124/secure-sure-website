@@ -7,6 +7,7 @@ import Bajaj from '@/public/assets/Home/CompanyLogo/Bajaj.png';
 import TataAIG from '@/public/assets/Home/CompanyLogo/TataAIG.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { links } from '@/utils/constants';
 
 const Associated = () => {
     return (
@@ -54,7 +55,7 @@ const Associated = () => {
                     quality={50}
                 /> */}
 
-                <Link href="/services">
+                <Link href={links.alliance}>
                     <div className="flex flex-col gap-1 items-center">
                         <p className="text-[#546FFF]">And many more</p>
 
