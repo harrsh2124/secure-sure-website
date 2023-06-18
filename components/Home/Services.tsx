@@ -1,4 +1,7 @@
+import { InitialValuesType, ModelContext } from '@/context/modal.context';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useContext } from 'react';
 import ArrowRight from '../../public/assets/Home/Services/arrowRight.svg';
 import CarGreen from '../../public/assets/Home/Services/carGreen.svg';
 import FamilyGreen from '../../public/assets/Home/Services/familyGreen.svg';
@@ -7,6 +10,9 @@ import UmbrellaGreen from '../../public/assets/Home/Services/umbrellaGreen.svg';
 import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
 
 const Services = () => {
+    const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
+    const router = useRouter();
+
     return (
         <div className="bg-[#F2FFF9] text-[#309C68] px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
             <p>Services</p>
@@ -41,7 +47,16 @@ const Services = () => {
                                     />
                                 </div>
 
-                                <div className="bg-[#309C68] p-1 rounded-full cursor-pointer">
+                                <div
+                                    className="bg-[#309C68] p-1 rounded-full cursor-pointer"
+                                    onClick={() => {
+                                        if (service.url) {
+                                            router.push(service.url);
+                                        } else {
+                                            handleOpenModal();
+                                        }
+                                    }}
+                                >
                                     <Image
                                         src={ArrowRight}
                                         alt="Know more"
@@ -60,7 +75,10 @@ const Services = () => {
                 })}
             </div>
 
-            <div className="flex items-center rounded-full border-2 border-[#309C68]/40 py-3 px-5 mt-10 gap-4 cursor-pointer">
+            <div
+                className="flex items-center rounded-full border-2 border-[#309C68]/40 py-3 px-5 mt-10 gap-4 cursor-pointer"
+                onClick={handleOpenModal}
+            >
                 <p className="font-[700]">Contact us for more services</p>
 
                 <Image src={LetsTalkMessage} alt="Let's talk" width={15} />
@@ -77,14 +95,16 @@ const services = [
         icon: HeartGreen,
         title: 'Health insurance',
         description:
-            'We are the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.'
+            'We are the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.',
+        url: '/services'
     },
     {
         id: 2,
         icon: FamilyGreen,
         title: 'Life Insurance',
         description:
-            "With our best life insurance policies, you can secure your family's future. At Secure Sure - the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70."
+            "With our best life insurance policies, you can secure your family's future. At Secure Sure - the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70.",
+        url: '/services'
     },
     {
         id: 3,

@@ -1,10 +1,16 @@
 import type { AppProps } from 'next/app';
 import { Space_Grotesk } from 'next/font/google';
 
-import '@/styles/globals.css';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import WhatsApp from '@/components/WhatsApp';
-import Footer from '@/components/Footer';
+import ModelProvider, {
+    InitialValuesType,
+    ModelContext
+} from '@/context/modal.context';
+import '@/styles/globals.css';
+import { useContext } from 'react';
+import Layout from '@/components/HOC/Layout';
 
 const font = Space_Grotesk({
     preload: true,
@@ -14,11 +20,15 @@ const font = Space_Grotesk({
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <main className={`${font.className}`}>
-            <Navbar />
-            <WhatsApp />
-            <Component {...pageProps} />
-            <Footer />
-        </main>
+        <ModelProvider>
+            <main className={`${font.className}`}>
+                <Layout>
+                    <Navbar />
+                    <WhatsApp />
+                    <Component {...pageProps} />
+                    <Footer />
+                </Layout>
+            </main>
+        </ModelProvider>
     );
 }
