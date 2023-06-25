@@ -1,16 +1,16 @@
-import styles from './index.module.css';
-import Image from 'next/image';
-import Logo from '../../public/logo/logo.svg';
-import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { links } from '@/utils/constants';
 import {
     InitialValuesType,
     ModalType,
     ModelContext
 } from '@/context/modal.context';
+import { links } from '@/utils/constants';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useContext } from 'react';
+import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
+import Logo from '../../public/logo/logo.svg';
+import styles from './index.module.css';
 
 const Navbar = () => {
     const router = useRouter();

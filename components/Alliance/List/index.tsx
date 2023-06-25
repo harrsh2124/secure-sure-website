@@ -1,14 +1,12 @@
-import React, { Fragment, useContext } from 'react';
-import ArrowRight from '../../../public/assets/Alliance/arrowRight.svg';
-import AlliancesList from './AlliancesList';
-import Image from 'next/image';
-import Modal from '@/components/HOC/Modal';
-import TypeOptionsModal from '@/components/HOC/Modal/Alliance/TypeOptionsModal';
 import {
     InitialValuesType,
     ModalType,
     ModelContext
 } from '@/context/modal.context';
+import Image from 'next/image';
+import { Fragment, useContext } from 'react';
+import ArrowRight from '../../../public/assets/Alliance/arrowRight.svg';
+import AlliancesList from './AlliancesList';
 
 const List = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;

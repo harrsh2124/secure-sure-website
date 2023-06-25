@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React from 'react';
 import HeroVector from '../../public/assets/AboutUs/aboutUsHeroVector.svg';
 
 const Hero = () => {

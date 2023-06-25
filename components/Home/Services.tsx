@@ -3,6 +3,7 @@ import {
     ModalType,
     ModelContext
 } from '@/context/modal.context';
+import { links } from '@/utils/constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
@@ -12,7 +13,6 @@ import FamilyGreen from '../../public/assets/Home/Services/familyGreen.svg';
 import HeartGreen from '../../public/assets/Home/Services/heartGreen.svg';
 import UmbrellaGreen from '../../public/assets/Home/Services/umbrellaGreen.svg';
 import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
-import { links } from '@/utils/constants';
 
 const Services = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;

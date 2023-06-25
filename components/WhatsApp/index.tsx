@@ -1,6 +1,5 @@
-import React from 'react';
-import WhatsAppLogo from '../../public/assets/WhatsAppLogo.svg';
 import Image from 'next/image';
+import WhatsAppLogo from '../../public/assets/WhatsAppLogo.svg';
 
 const WhatsApp = () => {
     const handleOnLogoClick = () => {

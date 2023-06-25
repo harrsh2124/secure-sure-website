@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Header from '../../public/assets/Home/Advantages/Header.svg';
+import { useEffect, useState } from 'react';
 import Fast from '../../public/assets/Home/Advantages/FastAdvantage.svg';
+import Header from '../../public/assets/Home/Advantages/Header.svg';
 import Secure from '../../public/assets/Home/Advantages/SecureAdvantage.svg';
 import Simple from '../../public/assets/Home/Advantages/SimpleAdvantage.svg';
 import Tick from '../../public/assets/Home/Advantages/tick.svg';
-import React, { useEffect, useState } from 'react';
 
 const Advantages = () => {
     const [activeTab, setActiveTab] = useState(1);

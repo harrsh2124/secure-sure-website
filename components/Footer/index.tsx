@@ -1,17 +1,17 @@
 import Link from 'next/link';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 // import FaceBook from '../../public/assets/Footer/facebook.svg';
 import Instagram from '../../public/assets/Footer/instagram.svg';
 // import Twitter from '../../public/assets/Footer/twitter.svg';
-import Google from '../../public/assets/Footer/google.svg';
-import Image from 'next/image';
 import {
     InitialValuesType,
     ModalType,
     ModelContext
 } from '@/context/modal.context';
-import { useRouter } from 'next/router';
 import { links } from '@/utils/constants';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import Google from '../../public/assets/Footer/google.svg';
 
 const Footer = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;

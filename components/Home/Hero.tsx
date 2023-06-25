@@ -3,6 +3,7 @@ import {
     ModalType,
     ModelContext
 } from '@/context/modal.context';
+import { links } from '@/utils/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useContext } from 'react';
@@ -13,7 +14,6 @@ import ManTwo from '../../public/assets/Home/People/2.jpg';
 import ManThree from '../../public/assets/Home/People/3.jpg';
 import ManFour from '../../public/assets/Home/People/4.jpg';
 import HeroVector from '../../public/assets/heroVector.svg';
-import { links } from '@/utils/constants';
 
 const Hero = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;

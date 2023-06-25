@@ -5,9 +5,9 @@ import LIC from '@/public/assets/Home/CompanyLogo/LIC.png';
 // import MaxLife from '@/public/assets/Home/CompanyLogo/MaxLife.jpg';
 import Bajaj from '@/public/assets/Home/CompanyLogo/Bajaj.png';
 import TataAIG from '@/public/assets/Home/CompanyLogo/TataAIG.png';
+import { links } from '@/utils/constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import { links } from '@/utils/constants';
 
 const Associated = () => {
     return (

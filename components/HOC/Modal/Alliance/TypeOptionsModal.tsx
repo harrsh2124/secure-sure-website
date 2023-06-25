@@ -3,7 +3,7 @@ import {
     ModalType,
     ModelContext
 } from '@/context/modal.context';
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 
 const TypeOptionsModal = () => {
     const { handleOpenModal, handlePrevModal } = useContext(

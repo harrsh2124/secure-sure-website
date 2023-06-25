@@ -1,7 +1,7 @@
 import Hero from '@/components/Alliance/Hero';
 import List from '@/components/Alliance/List';
 import Head from 'next/head';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 
 const Services = () => {
     return (
