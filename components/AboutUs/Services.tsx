@@ -1,4 +1,8 @@
-import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import {
+    InitialValuesType,
+    ModalType,
+    ModelContext
+} from '@/context/modal.context';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
@@ -54,7 +58,9 @@ const Services = () => {
                                         if (service.url) {
                                             router.push(service.url);
                                         } else {
-                                            handleOpenModal();
+                                            handleOpenModal(
+                                                ModalType['contact-us']
+                                            );
                                         }
                                     }}
                                 >

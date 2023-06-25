@@ -5,9 +5,16 @@ import LetsTalkMessage from '../../public/assets/letsTalkMessage.svg';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { links } from '@/utils/constants';
+import {
+    InitialValuesType,
+    ModalType,
+    ModelContext
+} from '@/context/modal.context';
+import { useContext } from 'react';
 
 const Navbar = () => {
     const router = useRouter();
+    const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
 
     return (
         <div className="h-[75px] bg-[#f5f5f5]">
@@ -41,7 +48,10 @@ const Navbar = () => {
                         })}
                     </div>
 
-                    <div className="w-[130px] h-[35px] bg-[#EAF2FF] text-[#546FFF] border border-[#546FFF] flex items-center justify-center gap-1 rounded-[60px] cursor-pointer">
+                    <div
+                        className="w-[130px] h-[35px] bg-[#EAF2FF] text-[#546FFF] border border-[#546FFF] flex items-center justify-center gap-1 rounded-[60px] cursor-pointer"
+                        onClick={() => handleOpenModal(ModalType['contact-us'])}
+                    >
                         <p>Let&apos;s talk</p>
                         <Image
                             src={LetsTalkMessage}

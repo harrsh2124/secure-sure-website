@@ -1,19 +1,27 @@
-import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import {
+    InitialValuesType,
+    ModalType,
+    ModelContext
+} from '@/context/modal.context';
 import { useContext } from 'react';
 import Modal from './Modal';
+import TypeOptionsModal from './Modal/Alliance/TypeOptionsModal';
 import ContactUsModal from './Modal/ContactUsModal';
 
 const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
-    const { handleCloseModal: handleCloseModalContext, isChatWithUsModalOpen } =
-        useContext(ModelContext) as InitialValuesType;
+    const { type } = useContext(ModelContext) as InitialValuesType;
 
     return (
         <div>
-            <Modal
-                isOpen={isChatWithUsModalOpen}
-                handleModalClose={handleCloseModalContext}
-            >
-                <ContactUsModal />
+            <Modal>
+                {type === ModalType['contact-us'] ||
+                type === ModalType['renewal'] ? (
+                    <ContactUsModal />
+                ) : type === ModalType['alliance-type-options'] ? (
+                    <TypeOptionsModal />
+                ) : (
+                    <div></div>
+                )}
             </Modal>
 
             {children}

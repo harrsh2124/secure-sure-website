@@ -1,4 +1,8 @@
-import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import {
+    InitialValuesType,
+    ModalType,
+    ModelContext
+} from '@/context/modal.context';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useContext } from 'react';
@@ -33,7 +37,7 @@ const Hero = () => {
                 <div className="flex gap-[25px] my-[40px]">
                     <div
                         className="bg-[#546FFF] py-[10px] px-[35px] rounded-[100px] text-white cursor-pointer"
-                        onClick={handleOpenModal}
+                        onClick={() => handleOpenModal(ModalType['contact-us'])}
                     >
                         <p>Chat with us</p>
                     </div>

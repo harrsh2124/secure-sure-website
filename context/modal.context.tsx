@@ -1,29 +1,43 @@
 import React, { SetStateAction, createContext, useState } from 'react';
 
 export type InitialValuesType = {
-    isChatWithUsModalOpen: boolean;
+    isModalOpen: boolean;
+    type: ModalType | '';
+    prevModal?: ModalType;
     handleCloseModal: () => void;
-    handleOpenModal: () => void;
+    handleOpenModal: (type: ModalType) => void;
+    handlePrevModal: (value: ModalType) => void;
 };
 export const ModelContext = createContext<InitialValuesType | null>(null);
 
 const ModelProvider = ({ children }: { children: JSX.Element }) => {
-    const [isChatWithUsModalOpen, setIsChatWithUsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalType, setModalType] = useState<ModalType | ''>('');
+    const [prevModal, setPrevModal] = useState<ModalType>();
 
     const handleCloseModal = () => {
-        setIsChatWithUsModalOpen(false);
+        setIsModalOpen(false);
+        setModalType('');
+        handlePrevModal();
     };
 
-    const handleOpenModal = () => {
-        setIsChatWithUsModalOpen(true);
+    const handleOpenModal = (type: ModalType) => {
+        setModalType(type);
+        setIsModalOpen(true);
+        handlePrevModal();
     };
+
+    const handlePrevModal = (value?: ModalType) => setPrevModal(value);
 
     return (
         <ModelContext.Provider
             value={{
-                isChatWithUsModalOpen,
+                isModalOpen,
+                type: modalType,
+                prevModal,
                 handleCloseModal,
-                handleOpenModal
+                handleOpenModal,
+                handlePrevModal
             }}
         >
             {children}
@@ -32,3 +46,9 @@ const ModelProvider = ({ children }: { children: JSX.Element }) => {
 };
 
 export default ModelProvider;
+
+export enum ModalType {
+    'contact-us',
+    'alliance-type-options',
+    'renewal'
+}

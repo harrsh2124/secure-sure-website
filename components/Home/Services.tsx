@@ -1,4 +1,8 @@
-import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import {
+    InitialValuesType,
+    ModalType,
+    ModelContext
+} from '@/context/modal.context';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
@@ -54,7 +58,9 @@ const Services = () => {
                                         if (service.url) {
                                             router.push(service.url);
                                         } else {
-                                            handleOpenModal();
+                                            handleOpenModal(
+                                                ModalType['contact-us']
+                                            );
                                         }
                                     }}
                                 >
@@ -78,7 +84,7 @@ const Services = () => {
 
             <div
                 className="flex items-center rounded-full border-2 border-[#309C68]/40 py-3 px-5 mt-10 gap-4 cursor-pointer"
-                onClick={handleOpenModal}
+                onClick={() => handleOpenModal(ModalType['contact-us'])}
             >
                 <p className="font-[700]">Contact us for more services</p>
 
