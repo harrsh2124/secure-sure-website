@@ -12,14 +12,20 @@ const TypeOptionsModal = () => {
 
     return (
         <div className="min-w-[30vw] flex justify-between items-center p-6">
-            <p className="cursor-pointer bg-[#EAF2FF] px-6 py-4 rounded-md">
+            <p
+                className="cursor-pointer bg-[#EAF2FF] px-6 py-4 rounded-md"
+                onClick={() => {
+                    handleOpenModal(ModalType['new-policy']);
+                    handlePrevModal(ModalType['alliance-type-options']);
+                }}
+            >
                 Buy new
             </p>
 
             <p
                 className="cursor-pointer bg-[#EAF2FF] px-6 py-4 rounded-md"
                 onClick={() => {
-                    handleOpenModal(ModalType['renewal']);
+                    handleOpenModal(ModalType['policy-renewal']);
                     handlePrevModal(ModalType['alliance-type-options']);
                 }}
             >

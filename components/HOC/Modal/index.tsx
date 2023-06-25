@@ -26,26 +26,24 @@ const Modal = ({ children }: IProps) => {
             id="wrapper"
             onClick={handleCloseModal}
         >
-            <div className="max-w-3/4 bg-white p-4 rounded-xl mt-20">
-                <div className="overflow-auto max-h-[70vh]">
-                    <div className="flex justify-between">
-                        <div>
-                            {prevModal ? (
-                                <p
-                                    onClick={() => {
-                                        handleOpenModal(prevModal);
-                                    }}
-                                >
-                                    Go back
-                                </p>
-                            ) : null}
-                        </div>
-
-                        <p onClick={handleCloseModalContext}>Close</p>
+            <div className="w-full sm:w-max bg-white p-4 rounded-xl mt-20 mx-4 sm:mx-12">
+                <div className="flex justify-between">
+                    <div>
+                        {prevModal ? (
+                            <p
+                                onClick={() => {
+                                    handleOpenModal(prevModal);
+                                }}
+                            >
+                                Go back
+                            </p>
+                        ) : null}
                     </div>
 
-                    {children}
+                    <p onClick={handleCloseModalContext}>Close</p>
                 </div>
+
+                <div className="overflow-auto max-h-[70vh]">{children}</div>
             </div>
         </div>
     );

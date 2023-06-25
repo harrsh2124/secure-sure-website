@@ -9,7 +9,9 @@ import ArrowRight from '../../../public/assets/Alliance/arrowRight.svg';
 import AlliancesList from './AlliancesList';
 
 const List = () => {
-    const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
+    const { handleOpenModal, handleSetExternalLink } = useContext(
+        ModelContext
+    ) as InitialValuesType;
 
     return (
         <Fragment>
@@ -37,11 +39,12 @@ const List = () => {
 
                             <div
                                 className="p-3 flex rounded-full bg-[#E0ECFF] relative w-[3rem] cursor-pointer hover:-rotate-45 transition-transform"
-                                onClick={() =>
+                                onClick={() => {
+                                    handleSetExternalLink(alliance.cbmLink);
                                     handleOpenModal(
                                         ModalType['alliance-type-options']
-                                    )
-                                }
+                                    );
+                                }}
                             >
                                 <Image
                                     src={ArrowRight}

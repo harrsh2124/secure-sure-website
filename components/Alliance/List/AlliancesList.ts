@@ -7,7 +7,8 @@ const AlliancesList = [
     {
         id: 1,
         title: 'Bajaj Insurance',
-        icon: Bajaj
+        icon: Bajaj,
+        cbmLink: 'https://www.google.com'
     },
     {
         id: 2,
@@ -18,7 +19,8 @@ const AlliancesList = [
     {
         id: 3,
         title: 'ICICI Insurance',
-        icon: ICICI
+        icon: ICICI,
+        cbmLink: 'https://www.google.com'
     },
     {
         id: 4,
