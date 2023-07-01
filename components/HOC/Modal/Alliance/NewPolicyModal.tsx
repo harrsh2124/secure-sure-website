@@ -2,8 +2,8 @@ import ContactUsForm from '@/components/common/ContactUsForm';
 import Image from 'next/image';
 import ArrowRight from '../../../../public/assets/AboutUs/arrowRight.svg';
 import Link from 'next/link';
-import {useContext} from 'react';
-import {InitialValuesType, ModelContext} from '@/context/modal.context';
+import { useContext } from 'react';
+import { InitialValuesType, ModelContext } from '@/context/modal.context';
 
 const NewPolicyModal = () => {
     const { externalLink } = useContext(ModelContext) as InitialValuesType;

@@ -5,10 +5,12 @@ export type InitialValuesType = {
     type: ModalType | '';
     prevModal?: ModalType;
     externalLink: string | undefined;
+    brochures: brochuresList;
     handleCloseModal: () => void;
     handleOpenModal: (type: ModalType) => void;
     handlePrevModal: (value: ModalType) => void;
     handleSetExternalLink: (value: string | undefined) => void;
+    handleSetBrochures(brochures: brochuresList): void;
 };
 export const ModelContext = createContext<InitialValuesType | null>(null);
 
@@ -17,12 +19,14 @@ const ModelProvider = ({ children }: { children: JSX.Element }) => {
     const [modalType, setModalType] = useState<ModalType | ''>('');
     const [prevModal, setPrevModal] = useState<ModalType>();
     const [externalLink, setExternalLink] = useState<string>();
+    const [brochures, setBrochures] = useState<brochuresList>();
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
         setModalType('');
         handlePrevModal();
         setExternalLink(undefined);
+        setBrochures(undefined);
     };
 
     const handleOpenModal = (type: ModalType) => {
@@ -35,6 +39,10 @@ const ModelProvider = ({ children }: { children: JSX.Element }) => {
         setExternalLink(value);
     };
 
+    const handleSetBrochures = (brochures: brochuresList) => {
+        setBrochures(brochures);
+    };
+
     const handlePrevModal = (value?: ModalType) => setPrevModal(value);
 
     return (
@@ -44,10 +52,12 @@ const ModelProvider = ({ children }: { children: JSX.Element }) => {
                 type: modalType,
                 prevModal,
                 externalLink,
+                brochures,
                 handleCloseModal,
                 handleOpenModal,
                 handlePrevModal,
-                handleSetExternalLink
+                handleSetExternalLink,
+                handleSetBrochures
             }}
         >
             {children}
@@ -61,5 +71,17 @@ export enum ModalType {
     'contact-us',
     'alliance-type-options',
     'policy-renewal',
-    'new-policy'
+    'new-policy',
+    'brochures-list'
 }
+
+type brochuresList =
+    | {
+          title: string;
+          brochures: {
+              id: number;
+              file: string;
+              title: string;
+          }[];
+      }
+    | undefined;

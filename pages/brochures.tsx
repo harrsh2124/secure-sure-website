@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Hero from '@/components/Brochure/Hero';
+import List from '@/components/Brochure/List';
 
 const Brochures = () => {
     return (
@@ -8,7 +10,10 @@ const Brochures = () => {
                 <title>Brochures</title>
             </Head>
 
-            <div>Brochures</div>
+            <div>
+                <Hero />
+                <List />
+            </div>
         </Fragment>
     );
 };
