@@ -2,8 +2,8 @@ import ContactUsForm from '@/components/common/ContactUsForm';
 import Image from 'next/image';
 import ArrowRight from '../../../../public/assets/AboutUs/arrowRight.svg';
 import Link from 'next/link';
-import { useContext } from 'react';
-import { InitialValuesType, ModelContext } from '@/context/modal.context';
+import {useContext} from 'react';
+import {InitialValuesType, ModelContext} from '@/context/modal.context';
 
 const NewPolicyModal = () => {
     const { externalLink } = useContext(ModelContext) as InitialValuesType;
@@ -13,7 +13,7 @@ const NewPolicyModal = () => {
             <div
                 className={`p-6 ${
                     externalLink
-                        ? 'border-r border-[#546FFF] w-[55%]'
+                        ? 'border-r border-[#546FFF] w-[55%] overflow-auto max-h-[70vh]'
                         : 'w-full sm:w-[430px]'
                 }`}
             >
