@@ -8,7 +8,7 @@ const BrochuresListModal = () => {
         <div className="flex w-[90vw] md:w-[700px] items-center">
             <div className="w-full pb-4">
                 <h3 className="text-[#546FFF] font-medium text-xl pb-8">
-                    {brochures.title} brochures
+                    {brochures.title}
                 </h3>
 
                 <div className="flex flex-col gap-3 max-h-[450px] overflow-y-auto">

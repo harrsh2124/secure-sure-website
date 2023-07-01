@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Hero from '@/components/Forms/Hero';
+import List from '@/components/Forms/List';
 
 const Forms = () => {
     return (
@@ -8,7 +10,10 @@ const Forms = () => {
                 <title>Forms</title>
             </Head>
 
-            <div>Forms</div>
+            <div>
+                <Hero />
+                <List />
+            </div>
         </Fragment>
     );
 };
