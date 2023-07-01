@@ -7,7 +7,7 @@ const WhatsApp = () => {
     };
 
     return (
-        <div className="fixed bg-[#25D366] p-3 rounded-full left-1 bottom-1 cursor-pointer">
+        <div className="fixed bg-[#25D366] p-3 rounded-full left-1 bottom-1 cursor-pointer z-40">
             <Image
                 src={WhatsAppLogo}
                 alt="Contact on WhatsApp"

@@ -13,7 +13,7 @@ const Process = () => {
                 Easiest process that we follow
             </h2>
 
-            <p className="text-center lg:px-[13rem] mb-[2rem]">
+            <p className="md:text-center lg:px-[13rem] mb-[2rem]">
                 Trust us to be your reliable partner in navigating the complex
                 world of insurance, as we strive to exceed your expectations and
                 deliver unparalleled customer satisfaction.

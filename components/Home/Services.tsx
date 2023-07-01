@@ -26,7 +26,7 @@ const Services = () => {
                 Let&apos;s Brief You About Our Services
             </h2>
 
-            <p className="text-center px-0 lg:px-[13rem] mb-[2rem]">
+            <p className="md:text-center px-0 lg:px-[13rem] mb-[2rem]">
                 At Secure Sure, we help you select the best insurance policy
                 that perfectly suits your needs. Our services are not limited to
                 helping you buy the policy, but we also help you with the claim
