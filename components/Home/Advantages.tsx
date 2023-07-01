@@ -26,17 +26,17 @@ const Advantages = () => {
     }, [toggleResetActiveTab]);
 
     return (
-        <div className="text-[#546FFF] px-[50px] xl:px-[150px] my-[60px]">
-            <div className="flex justify-between items-center">
+        <div className="text-[#546FFF] px-[1rem] md:px-[50px] xl:px-[150px] my-[60px]">
+            <div className="flex justify-between items-center flex-col lg:flex-row gap-5 lg:gap-0">
                 <div className="relative">
-                    <p className="font-[700] text-[30px]">
+                    <p className="font-[700] text-[25px] sm:text-[30px]">
                         Advantages with Policy Wise
                     </p>
 
                     <Image
                         src={Header}
                         alt="Advantages with Policy Wise"
-                        className="absolute bottom-[-8px] right-[-15px]"
+                        className="absolute bottom-[-8px] right-[-15px] hidden sm:block"
                         width={15}
                     />
                 </div>
@@ -68,15 +68,15 @@ const Advantages = () => {
                     return (
                         <div
                             key={advantage.id}
-                            className={`items-center justify-between h-[450px] ${
+                            className={`items-center justify-between lg:h-[450px] flex-col lg:flex-row gap-6 lg:gap-0 ${
                                 advantage.id === activeTab ? 'flex' : 'hidden'
                             }`}
                         >
-                            <div className="w-[450px] h-[400px] flex items-center justify-center">
+                            <div className="w-full md:w-[450px] flex items-center justify-center">
                                 <Image
                                     src={advantage.icon}
                                     alt={advantage.title}
-                                    width={300}
+                                    height={300}
                                 />
                             </div>
 
@@ -182,4 +182,4 @@ const AdvantagesList = [
                             //         ? 'opacity-100 h-full'
                             //         : 'opacity-0 h-0'
                             // }
-*/
+ */

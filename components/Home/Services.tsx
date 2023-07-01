@@ -19,14 +19,14 @@ const Services = () => {
     const router = useRouter();
 
     return (
-        <div className="bg-[#F2FFF9] text-[#309C68] px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
+        <div className="bg-[#F2FFF9] text-[#309C68] px-[1rem] md:px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
             <p>Services</p>
 
             <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
                 Let&apos;s Brief You About Our Services
             </h2>
 
-            <p className="text-center px-[13rem] mb-[2rem]">
+            <p className="text-center px-0 lg:px-[13rem] mb-[2rem]">
                 At Secure Sure, we help you select the best insurance policy
                 that perfectly suits your needs. Our services are not limited to
                 helping you buy the policy, but we also help you with the claim
@@ -35,7 +35,7 @@ const Services = () => {
                 requirements.
             </p>
 
-            <div className="grid grid-cols-2 w-full gap-6 xl:gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-6 xl:gap-8">
                 {services.map((service) => {
                     return (
                         <div

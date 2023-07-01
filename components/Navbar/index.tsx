@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <div className="h-[75px] bg-[#f5f5f5]">
             <div className="bg-[#FFFFFF] fixed py-5 w-screen z-50">
-                <div className="px-[50px] xl:px-[150px] flex items-center justify-between m-auto">
+                <div className="px-2 md:px-[50px] xl:px-[150px] flex items-center justify-between m-auto">
                     <Link href="/">
                         <Image
                             src={Logo}
@@ -30,7 +30,9 @@ const Navbar = () => {
                         />
                     </Link>
 
-                    <div className={`flex items-center ${styles.navLinks}`}>
+                    <div
+                        className={`items-center ${styles.navLinks} hidden lg:flex`}
+                    >
                         {navbarLinks.map((link) => {
                             return (
                                 <Link

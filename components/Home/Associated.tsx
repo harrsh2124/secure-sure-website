@@ -11,12 +11,12 @@ import Link from 'next/link';
 
 const Associated = () => {
     return (
-        <div className="my-[120px] px-[50px] xl:px-[150px]">
+        <div className="my-[120px] px-[1rem] md:px-[50px] xl:px-[150px]">
             <p className="text-[#546FFF] text-center mb-6 text-lg font-[800]">
                 Associated with
             </p>
 
-            <div className="w-full bg-[#F0F2FF] py-[20px] px-[40px] rounded-[60px] flex justify-between items-center">
+            <div className="w-full bg-[#F0F2FF] py-[20px] px-[40px] rounded-xl lg:rounded-3xl flex justify-between items-center flex-col lg:flex-row gap-6 lg:gap-0">
                 {/* <Image
                     src={HDFC}
                     alt="HDFC Insurance"
@@ -56,7 +56,7 @@ const Associated = () => {
                 /> */}
 
                 <Link href={links.alliance}>
-                    <div className="flex flex-col gap-1 items-center">
+                    <div className="flex lg:flex-col gap-1 items-center">
                         <p className="text-[#546FFF]">And many more</p>
 
                         <Image src={Three} alt="Right icon" width={20} />

@@ -10,7 +10,7 @@ const FAQ = () => {
     };
 
     return (
-        <div className="bg-[#F2FFF9] text-[#309C68] px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
+        <div className="bg-[#F2FFF9] text-[#309C68] px-[1rem] md:px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
             <p>FAQs</p>
 
             <h2 className="text-[30px] font-[700] mt-[1rem] mb-[2rem]">

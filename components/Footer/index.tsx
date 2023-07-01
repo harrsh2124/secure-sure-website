@@ -18,7 +18,7 @@ const Footer = () => {
     const router = useRouter();
 
     return (
-        <div className="px-[50px] xl:px-[150px] py-[60px] grid grid-cols-4">
+        <div className="px-[1rem] md:px-[50px] xl:px-[150px] py-[60px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
             <div className="flex flex-col">
                 <p className="text-2xl font-medium mb-3 text-[#546FFF]">
                     Secure Sure

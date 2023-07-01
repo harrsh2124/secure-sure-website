@@ -19,8 +19,8 @@ const Hero = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
 
     return (
-        <div className="flex items-center mt-[90px] gap-[50px] px-[50px] xl:px-[150px]">
-            <div className="w-1/2">
+        <div className="flex items-center flex-col-reverse lg:flex-row mt-[90px] gap-[50px] px-[1rem] md:px-[50px] xl:px-[150px]">
+            <div className="w-full lg:w-1/2">
                 <h1 className="font-[700] text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] text-[#546FFF]">
                     We help you find the best Insurance Plan at the right price
                 </h1>
@@ -34,18 +34,18 @@ const Hero = () => {
                     insurance, or vehicle insurance, you will get all under one
                     roof.
                 </p>
-                <div className="flex gap-[25px] my-[40px]">
+                <div className="flex gap-[25px] flex-col sm:flex-row my-[40px]">
                     <div
-                        className="bg-[#546FFF] py-[10px] px-[35px] rounded-[100px] text-white cursor-pointer"
+                        className="bg-[#546FFF] py-[10px] px-[35px] rounded-[100px] text-white cursor-pointer w-[170px] flex"
                         onClick={() => handleOpenModal(ModalType['contact-us'])}
                     >
-                        <p>Chat with us</p>
+                        <p className="m-auto">Chat with us</p>
                     </div>
 
-                    <div className="relative">
+                    <div className="relative w-[200px] flex">
                         <Link href={links.alliance}>
-                            <div className="bg-[#E1FFF1] border border-[#309C68] text-[#309C68] py-[10px] px-[35px] rounded-[100px]">
-                                Explore services
+                            <div className="bg-[#E1FFF1] border border-[#309C68] text-[#309C68] py-[10px] px-[35px] rounded-[100px] m-auto flex">
+                                <p className="m-auto">Explore services</p>
                             </div>
                         </Link>
 
@@ -57,7 +57,8 @@ const Hero = () => {
                         />
                     </div>
                 </div>
-                <div className="flex items-center gap-4">
+
+                <div className="flex md:items-center gap-4 flex-col md:flex-row">
                     <div className="flex">
                         <span className="rounded-[50%] relative inline-block overflow-hidden border-4 border-white">
                             <Image
@@ -96,7 +97,7 @@ const Hero = () => {
                         </span>
                     </div>
 
-                    <div className="relative">
+                    <div className="relative w-[300px]">
                         <p className="text-[#309C68] underline">
                             2000+ satisfied and happy customers
                         </p>

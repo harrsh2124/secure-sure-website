@@ -19,7 +19,7 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="text-[#546FFF] px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
+        <div className="text-[#546FFF] px-[50px] xl:px-[150px] py-[60px] hidden md:flex flex-col items-center">
             <p>Testimonials</p>
 
             <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">

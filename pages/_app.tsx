@@ -16,7 +16,7 @@ const font = Space_Grotesk({
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <ModelProvider>
-            <main className={`${font.className}`}>
+            <main className={`${font.className} w-screen`}>
                 <Layout>
                     <Navbar />
                     <WhatsApp />
