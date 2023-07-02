@@ -9,7 +9,7 @@ const Process = () => {
         <div className="bg-[#F2FFF9] text-[#309C68] px-[1rem] md:px-[50px] xl:px-[150px] py-[60px] flex flex-col items-center">
             <p>Our process</p>
 
-            <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
+            <h2 className="text-[25px] md:text-[30px] lg:text-[35px] font-[700] mb-[0.5rem]">
                 Easiest process that we follow
             </h2>
 

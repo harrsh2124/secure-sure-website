@@ -19,7 +19,7 @@ const Hero = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
 
     return (
-        <div className="flex items-center flex-col-reverse lg:flex-row mt-[90px] gap-[50px] px-[1rem] md:px-[50px] xl:px-[150px]">
+        <div className="flex items-center flex-col-reverse lg:flex-row mt-[50px] sm:mt-[90px] gap-[50px] px-[1rem] md:px-[50px] xl:px-[150px]">
             <div className="w-full lg:w-1/2">
                 <h1 className="font-[700] text-[20px] sm:text-[30px] md:text-[35px] lg:text-[40px] text-[#546FFF]">
                     We help you find the best Insurance Plan at the right price
@@ -113,14 +113,14 @@ const Hero = () => {
             </div>
 
             <div className="flex-1">
-                <Image
-                    src={HeroVector}
-                    alt="Your family is secured."
-                    width={680}
-                    height={600}
-                    className="m-auto"
-                    priority
-                />
+                <div className="m-auto relative w-[250px] sm:w-[300px] md:w-[680px] h-[250px] sm:h-[300px] md:h-[600px]">
+                    <Image
+                        src={HeroVector}
+                        alt="Your family is secured."
+                        fill
+                        priority
+                    />
+                </div>
             </div>
         </div>
     );

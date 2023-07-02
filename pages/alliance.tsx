@@ -3,11 +3,11 @@ import List from '@/components/Alliance/List';
 import Head from 'next/head';
 import { Fragment } from 'react';
 
-const Services = () => {
+const Alliance = () => {
     return (
         <Fragment>
             <Head>
-                <title>Services</title>
+                <title>Alliance</title>
             </Head>
 
             <div>
@@ -18,4 +18,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Alliance;

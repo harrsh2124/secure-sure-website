@@ -12,7 +12,7 @@ import Link from 'next/link';
 const Associated = () => {
     return (
         <div className="my-[120px] px-[1rem] md:px-[50px] xl:px-[150px]">
-            <p className="text-[#546FFF] text-center mb-6 text-lg font-[800]">
+            <p className="text-[#546FFF] text-center mb-6 text-[25px] md:text-[30px] lg:text-[35px] font-[800]">
                 Associated with
             </p>
 

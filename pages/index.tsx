@@ -3,10 +3,10 @@ import Associated from '@/components/Home/Associated';
 import FAQ from '@/components/Home/FAQ';
 import Hero from '@/components/Home/Hero';
 import Process from '@/components/Home/Process';
-import Services from '@/components/Home/Services';
 import Testimonials from '@/components/Home/Testimonials';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Services from '@/components/common/Services';
 
 const Home = () => {
     return (

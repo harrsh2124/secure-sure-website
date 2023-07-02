@@ -3,21 +3,22 @@ import HeroVector from '../../public/assets/AboutUs/aboutUsHeroVector.svg';
 
 const Hero = () => {
     return (
-        <div className="flex items-center my-[90px] gap-[50px] px-[50px] xl:px-[150px]">
+        <div className="flex items-center flex-col lg:flex-row my-[50px] lg:my-[90px] gap-[50px] px-[1rem] md:px-[50px] xl:px-[150px]">
             <div className="flex-1">
-                <Image
-                    src={HeroVector}
-                    alt="Your family is secured."
-                    height={300}
-                    className="m-auto"
-                    priority
-                />
+                <div className="m-auto relative w-[300px] md:w-[500px] lg:w-[400px] h-[300px] md:h-[500px] lg:h-[400px]">
+                    <Image
+                        src={HeroVector}
+                        alt="Your family is secured."
+                        fill
+                        priority
+                    />
+                </div>
             </div>
 
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
                 <p className="text-[#546FFF]">About us</p>
 
-                <h1 className="font-[700] text-[15px] sm:text-[25px] md:text-[30px] lg:text-[35px] text-[#546FFF]">
+                <h1 className="font-[700] text-[25px] md:text-[30px] lg:text-[35px] text-[#546FFF]">
                     What we are as secure sure?
                 </h1>
 

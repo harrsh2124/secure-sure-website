@@ -17,14 +17,17 @@ const Navbar = () => {
     const { handleOpenModal } = useContext(ModelContext) as InitialValuesType;
 
     return (
-        <div className="h-[75px] bg-[#f5f5f5]">
-            <div className="bg-[#FFFFFF] fixed py-5 w-screen z-50">
+        <div className="h-[50px] sm:h-[75px] bg-[#f5f5f5]">
+            <div className="bg-[#FFFFFF] fixed py-3 sm:py-5 w-screen z-50">
                 <div className="px-2 md:px-[50px] xl:px-[150px] flex items-center justify-between m-auto">
-                    <Link href="/">
+                    <Link
+                        href="/"
+                        className="relative h-[26px] w-[150px] sm:w-[220px]"
+                    >
                         <Image
                             src={Logo}
                             alt="Secure Sure"
-                            width={220}
+                            fill
                             priority
                             quality={100}
                         />
@@ -51,7 +54,7 @@ const Navbar = () => {
                     </div>
 
                     <div
-                        className="w-[130px] h-[35px] bg-[#EAF2FF] text-[#546FFF] border border-[#546FFF] flex items-center justify-center gap-1 rounded-[60px] cursor-pointer"
+                        className="w-[130px] h-[35px] bg-[#EAF2FF] text-[#546FFF] border border-[#546FFF] hidden lg:flex items-center justify-center gap-1 rounded-[60px] cursor-pointer"
                         onClick={() => handleOpenModal(ModalType['contact-us'])}
                     >
                         <p>Let&apos;s talk</p>

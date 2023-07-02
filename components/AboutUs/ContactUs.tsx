@@ -63,21 +63,21 @@ const ContactUs = () => {
         'Secure Sure, Shubham Complex, Opposite Navrangpura Jain Temple, Navrangpura, Ahmedabad, Gujarat - 380009';
 
     return (
-        <div className="text-[#546FFF] px-[50px] xl:px-[150px] pt-[60px] flex flex-col items-center">
+        <div className="text-[#546FFF] px-[1rem] md:px-[50px] xl:px-[150px] pt-[60px] flex flex-col items-center">
             <p>Contact Us</p>
 
-            <h2 className="text-[30px] font-[700] mt-[1.5rem] mb-[0.5rem]">
+            <h2 className="text-[25px] md:text-[30px] lg:text-[35px] font-[700] mb-[0.5rem]">
                 Let&apos;s secure your future with secure sure
             </h2>
 
-            <div className="bg-[#F0F2FF] w-full rounded-3xl flex px-10 gap-4">
+            <div className="bg-[#F0F2FF] w-full rounded-3xl flex flex-col lg:flex-row px-4 md:px-10 gap-4">
                 <form
-                    className="w-1/2 flex flex-col justify-center items-center gap-4 py-10"
+                    className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-4 py-10"
                     autoComplete="off"
                     onSubmit={handleSubmit(onSubmit)}
                 >
-                    <div className="w-full flex gap-4">
-                        <div className="w-1/2">
+                    <div className="w-full flex flex-col md:flex-row gap-4">
+                        <div className="w-full md:w-1/2">
                             <input
                                 type="text"
                                 placeholder="First Name"
@@ -91,7 +91,7 @@ const ContactUs = () => {
                             </p>
                         </div>
 
-                        <div className="w-1/2">
+                        <div className="w-full md:w-1/2">
                             <input
                                 type="text"
                                 placeholder="Last Name"
@@ -106,8 +106,8 @@ const ContactUs = () => {
                         </div>
                     </div>
 
-                    <div className="w-full flex gap-4">
-                        <div className="w-1/2">
+                    <div className="w-full flex flex-col md:flex-row gap-4">
+                        <div className="w-full md:w-1/2">
                             <input
                                 type="text"
                                 placeholder="Email address"
@@ -121,7 +121,7 @@ const ContactUs = () => {
                             </p>
                         </div>
 
-                        <div className="w-1/2">
+                        <div className="w-full md:w-1/2">
                             <input
                                 type="text"
                                 placeholder="Contact number"
@@ -165,7 +165,7 @@ const ContactUs = () => {
                     </button>
                 </form>
 
-                <div className="flex-1 py-6">
+                <div className="xl:flex-1 py-6 h-[500px] lg:h-auto">
                     <Map address={address} />
                 </div>
             </div>

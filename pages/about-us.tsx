@@ -1,8 +1,8 @@
 import ContactUs from '@/components/AboutUs/ContactUs';
 import Hero from '@/components/AboutUs/Hero';
-import Services from '@/components/AboutUs/Services';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Services from '@/components/common/Services';
 
 const AboutUs = () => {
     return (

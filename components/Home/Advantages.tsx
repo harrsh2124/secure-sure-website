@@ -29,7 +29,7 @@ const Advantages = () => {
         <div className="text-[#546FFF] px-[1rem] md:px-[50px] xl:px-[150px] my-[60px]">
             <div className="flex justify-between items-center flex-col lg:flex-row gap-5 lg:gap-0">
                 <div className="relative">
-                    <p className="font-[700] text-[25px] sm:text-[30px]">
+                    <p className="font-[700] text-[25px] md:text-[30px] lg:text-[35px]">
                         Advantages with Policy Wise
                     </p>
 
