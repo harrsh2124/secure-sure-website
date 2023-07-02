@@ -113,7 +113,7 @@ const Hero = () => {
             </div>
 
             <div className="flex-1">
-                <div className="m-auto relative w-[250px] sm:w-[300px] md:w-[680px] h-[250px] sm:h-[300px] md:h-[600px]">
+                <div className="m-auto relative w-[250px] sm:w-[300px] md:w-[600px] lg:w-full h-[250px] sm:h-[300px] md:h-[600px]">
                     <Image
                         src={HeroVector}
                         alt="Your family is secured."
