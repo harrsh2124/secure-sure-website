@@ -11,7 +11,7 @@ const TypeOptionsModal = () => {
     ) as InitialValuesType;
 
     return (
-        <div className="min-w-[30vw] flex justify-between items-center p-6">
+        <div className="min-w-[30vw] flex justify-between items-center gap-[3rem] p-6">
             <p
                 className="cursor-pointer bg-[#EAF2FF] px-6 py-4 rounded-md"
                 onClick={() => {

@@ -26,7 +26,7 @@ const Modal = ({ children }: IProps) => {
             id="wrapper"
             onClick={handleCloseModal}
         >
-            <div className="w-full sm:w-max bg-white p-4 rounded-xl mt-20 mx-4 sm:mx-12">
+            <div className="w-full sm:w-max bg-white p-4 rounded-xl mx-4 sm:mx-12">
                 <div className="flex justify-between">
                     <div>
                         {prevModal ? (

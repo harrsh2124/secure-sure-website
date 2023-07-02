@@ -9,11 +9,11 @@ const NewPolicyModal = () => {
     const { externalLink } = useContext(ModelContext) as InitialValuesType;
 
     return (
-        <div className="flex max-w-4xl items-center">
+        <div className="flex flex-col-reverse md:flex-row max-w-4xl items-center">
             <div
-                className={`p-6 ${
+                className={`px-0 py-6 sm:p-6 ${
                     externalLink
-                        ? 'border-r border-[#546FFF] w-[55%] overflow-auto max-h-[70vh]'
+                        ? 'md:border-r md:border-[#546FFF] w-full md:w-[55%] md:overflow-auto md:max-h-[70vh]'
                         : 'w-full sm:w-[430px]'
                 }`}
             >
@@ -25,7 +25,7 @@ const NewPolicyModal = () => {
             </div>
 
             {externalLink ? (
-                <div className="p-6 w-[45%] flex flex-col items-center gap-4">
+                <div className="p-6 w-full md:w-[45%] flex flex-col items-center gap-4">
                     <h3 className="text-[#546FFF] text-xl font-medium">
                         Self apply
                     </h3>

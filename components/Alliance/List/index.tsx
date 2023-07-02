@@ -15,7 +15,7 @@ const List = () => {
 
     return (
         <Fragment>
-            <div className="grid grid-cols-2 xl:grid-cols-3 justify-evenly my-[90px] gap-[50px] px-[50px] xl:px-[150px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-evenly my-5 sm:my-[90px] gap-[20px] sm:gap-[50px] px-4 md:px-[50px] xl:px-[150px]">
                 {AlliancesList.map((alliance) => {
                     return (
                         <div
@@ -23,7 +23,7 @@ const List = () => {
                             className="flex items-center justify-between gap-4 bg-[#EAF2FF] px-6 py-4 rounded-full"
                         >
                             <div className="flex items-center gap-4 w-[84%]">
-                                <div className="flex w-[7rem]">
+                                <div className="w-[7rem] hidden sm:flex">
                                     <div
                                         className={`relative w-[${
                                             alliance.width || '6rem'
