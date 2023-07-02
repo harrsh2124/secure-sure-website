@@ -72,7 +72,7 @@ export enum ModalType {
     'alliance-type-options',
     'policy-renewal',
     'new-policy',
-    'brochures-list'
+    'documents-list'
 }
 
 type brochuresList =

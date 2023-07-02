@@ -23,7 +23,7 @@ const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
                     <TypeOptionsModal />
                 ) : type === ModalType['new-policy'] ? (
                     <NewPolicyModal />
-                ) : type === ModalType['brochures-list'] ? (
+                ) : type === ModalType['documents-list'] ? (
                     <BrochuresListModal />
                 ) : (
                     <div></div>

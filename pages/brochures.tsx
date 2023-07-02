@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import Hero from '@/components/Brochure/Hero';
-import List from '@/components/Brochure/List';
+import DocumentsList from '@/components/common/DocumentsList';
+import BrochuresList from '@/components/Brochure/BrochuresList';
 
 const Brochures = () => {
     return (
@@ -12,7 +13,7 @@ const Brochures = () => {
 
             <div>
                 <Hero />
-                <List />
+                <DocumentsList ListData={BrochuresList} />
             </div>
         </Fragment>
     );

@@ -11,7 +11,7 @@ const BrochuresListModal = () => {
                     {brochures.title}
                 </h3>
 
-                <div className="flex flex-col gap-3 max-h-[450px] overflow-y-auto">
+                <div className="flex flex-col gap-3 max-h-[400px] overflow-y-auto">
                     {brochures.brochures.map((brochure) => {
                         return (
                             <div
