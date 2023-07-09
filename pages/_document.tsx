@@ -9,7 +9,7 @@ export default function Document() {
                     content="Discover the best insurance solutions in India with Secure Sure, ensuring your peace of mind and safeguarding what's important to you."
                 />
             </Head>
-            <body>
+            <body className="h-screen overflow-auto">
                 <Main />
                 <NextScript />
             </body>

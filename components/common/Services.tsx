@@ -55,13 +55,7 @@ const Services = () => {
                                 <div
                                     className="bg-[#309C68] p-1 rounded-full cursor-pointer"
                                     onClick={() => {
-                                        if (service.url) {
-                                            router.push(service.url);
-                                        } else {
-                                            handleOpenModal(
-                                                ModalType['contact-us']
-                                            );
-                                        }
+                                        router.push(links.alliance);
                                     }}
                                 >
                                     <Image
@@ -102,16 +96,14 @@ const services = [
         icon: HeartGreen,
         title: 'Health insurance',
         description:
-            'We are the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.',
-        url: links.alliance
+            'We are the best health insurance agency in India that offers a comprehensive health insurance plan that financially protects you and your loved ones in times of medical emergencies. Our experts help you, from covering hospitalization costs to providing quality healthcare access. We make sure your health remains your utmost priority.'
     },
     {
         id: 2,
         icon: FamilyGreen,
         title: 'Life Insurance',
         description:
-            "With our best life insurance policies, you can secure your family's future. At Secure Sure - the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70.",
-        url: links.alliance
+            "With our best life insurance policies, you can secure your family's future. At Secure Sure - the best life insurance agency in India, we understand how important financial stability is for your loved ones in the event of unforeseen circumstances. We offer personalized solutions that offer you a safety net and let you leave behind a legacy even if you are searching for life insurance for senior citizens over 70."
     },
     {
         id: 3,

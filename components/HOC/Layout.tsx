@@ -14,7 +14,7 @@ const Layout = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
     const { type } = useContext(ModelContext) as InitialValuesType;
 
     return (
-        <div className="h-screen overflow-auto">
+        <div className="">
             <Modal>
                 {type === ModalType['contact-us'] ||
                 type === ModalType['policy-renewal'] ? (

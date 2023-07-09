@@ -69,11 +69,5 @@ const FAQs = [
         title: 'Why are you doing it for free?',
         description:
             'We truly believe that financial literacy and information should be made accessible to people without breaking their bank accounts. For that, we will go the extra mile and transform our dream into reality.'
-    },
-    {
-        id: 5,
-        title: 'How do you make money?',
-        description:
-            'When you buy an insurance policy via Secure Sure, we earn a small commission from the insurance companies. This is how we make money.'
     }
 ];

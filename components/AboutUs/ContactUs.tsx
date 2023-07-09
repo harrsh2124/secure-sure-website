@@ -165,7 +165,7 @@ const ContactUs = () => {
                     </button>
                 </form>
 
-                <div className="xl:flex-1 py-6 h-[500px] lg:h-auto">
+                <div className="lg:flex-1 py-6 h-[500px] lg:h-auto">
                     <Map address={address} />
                 </div>
             </div>
